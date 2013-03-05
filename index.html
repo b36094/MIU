@@ -21,20 +21,26 @@
 	
 	<!-- Css File Link -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	
+	<!-- Css Font Style -->
+	<link href='http://fonts.googleapis.com/css?family=Tauri' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
 	<header>
-		
-		<h1>Home Media Library<h1>
-	
+		<a href = "additem.html">
+			<div id = "indexTitle">
+				<img src = "images/indexAddItem.png" alt = "iconDB" title = "Add Entry Icon" id = "icon"></img>
+				<p id = "labelTitle">Home Media Library</p>
+				<p id = "labelTitle2"> [+] Click to Add a New Entry</p>
+			</div>
+		</a>
 	</header>
-	
-	<p id = "indexP1">This is a home media data-base that stores the name of audio, video and data content for administration and future reference.</p>	
 	<hr id = "indexLine">	
-	<h2 id = "indexH2">&#8226; Add New Entry</h2>
-	<span id = "indexButton"><a href = "additem.html" class="indexButton">&#187; Click to Add a New Entry &#171;</a><span>
+	<div id = "inputField"><input type = "text"></input></div>
+	<div id = "indexSubmit"><input type = "submit" value = "Search the Library"></input></div>
+	
 </body>
 
 

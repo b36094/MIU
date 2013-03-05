@@ -1,15 +1,53 @@
 body {
-	font-family:Arial, sans-serif;
+	font-family:Tauri, sans-serif;
 	font-size:0.9em;
+	margin:0px;
 }
+a {
+	text-decoration: none;
+}
+
 /*================================ Index CSS goes here ===============================*/
-h1 {
+/* main color #173154
+	active color #396EB3 , #274B7A*/
 	
-	font-size:1.6em;	
+#indexTitle {
+	width: auto;
+	height: 50px;
+	background-color:#173154;
+	padding-top:9px;
+	-webkit-box-sizing: border-box;  /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;
+	
+}
+#indexTitle:active{
+	background-color:#274B7A;	
+}
+
+#icon {
+	width: 30px;
+	height: 30px;	
+	float:left;
+}
+#labelTitle {
+	color:white;
+	text-align: center;
+	margin: auto;
+}
+#labelTitle2 {
+	color:white;
+	text-align: center;
+	font-size:0.7em;
+	margin-top:6px;
+}
+h2 {
+	font-size:0.5em;
 	text-align: center;
 	color:white;
-	background-color:#9B9EB3;
+	margin-top:2px;
 }
+
 #indexP1 {
 	font-weight:bold;	
 	text-align:left;
@@ -27,6 +65,19 @@ h1 {
 	margin-left:10%;	
 	text-align:center;
 	color:blue;	
+}
+#indexLine {
+	margin-top:1px;
+	margin-bottom: 0px;
+}
+#inputField {
+	width: auto;
+	height: auto;
+	margin:0 auto;
+	display: block;
+}
+#indexSubmit {
+	
 }
 /*==============================additem.html Css goes here=============================*/
 #clearInput {
