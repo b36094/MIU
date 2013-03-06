@@ -9,6 +9,11 @@
 <head>
 	<title>Home Media Library</title>
 	
+	<!-- jQuery Mobile -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+	
 	<!-- Meta Data -->
 	<meta charset = "utf-8"/>
 	<meta name = "description" content = "Media Library"/>
@@ -27,19 +32,32 @@
 </head>
 
 <body>
-
-	<header>
-		<a href = "additem.html">
-			<div id = "indexTitle">
-				<img src = "images/indexAddItem.png" alt = "iconDB" title = "Add Entry Icon" id = "icon"></img>
-				<p id = "labelTitle">Home Media Library</p>
-				<p id = "labelTitle2"> [+] Click to Add a New Entry</p>
-			</div>
-		</a>
+	<!-- Header goes here-->
+	<header data-role = "header">
+		<img id = "icon" src = "images/indexAddItem.png"></img>
+		<h1>Media Library</h1>
+		<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
 	</header>
-	<hr id = "indexLine">	
-	<div id = "inputField"><input type = "text"></input></div>
-	<div id = "indexSubmit"><input type = "submit" value = "Search the Library"></input></div>
+
+	
+	
+	<!-- Browsing feature goes here -->
+	<div data-role = "content">
+		<!--Search feature goes here -->
+		<input type = "search" placeholder = "Look-up entries here"></input>	
+		<!--Buttons go here -->		
+		<div data-role = "controlgroup" data-type = "vertical" >
+			<button href = "error" rel = "external" id = "audioBrowse">Audio Entries</button>			
+			<button href = "error" rel = "external" id = "videoBrowse">Video Entries</button>			
+			<button href = "error" rel = "external" id = "dataBrowse">Data Entries</button>			
+			<button href = "error" rel = "external" id = "otherBrowse">Other Entries</button>			
+						
+		</div>	
+	</div>
+	
+	<!--Footer goes here-->	
+	<footer data-role = "footer"></footer>
+	
 	
 </body>
 
