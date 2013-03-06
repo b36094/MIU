@@ -45,14 +45,18 @@
 	<div data-role = "content">
 		<!--Search feature goes here -->
 		<input type = "search" placeholder = "Look-up entries here"></input>	
+		
 		<!--Buttons go here -->		
-		<div data-role = "controlgroup" data-type = "vertical" >
-			<button href = "error" rel = "external" id = "audioBrowse">Audio Entries</button>			
-			<button href = "error" rel = "external" id = "videoBrowse">Video Entries</button>			
-			<button href = "error" rel = "external" id = "dataBrowse">Data Entries</button>			
-			<button href = "error" rel = "external" id = "otherBrowse">Other Entries</button>			
+			
+		<ul data-role = "listview">
+			<li data-role = "devider" data-theme = "b">Browse by category:</li>
+			<li> <a href = "error" rel = "external" id = "audioBrowse">Audio Entries</a></li>			
+			<li> <a href = "error" rel = "external" id = "videoBrowse">Video Entries</a></li>			
+			<li> <a href = "error" rel = "external" id = "dataBrowse">Data Entries</a></li>			
+			<li> <a href = "error" rel = "external" id = "otherBrowse">Other Entries</a></li>			
 						
-		</div>	
+		</ul>	
+		
 	</div>
 	
 	<!--Footer goes here-->	
