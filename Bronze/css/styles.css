@@ -1,0 +1,99 @@
+body {
+	font-family:Tauri, sans-serif;
+	font-size:0.9em;
+	margin:0px;
+}
+
+/*================================ Index CSS goes here ===============================*/
+/* main color #173154
+	active color #396EB3 , #274B7A*/
+
+.ui-title {
+    margin     : 0.4em 1em 0.8em 140px !important;
+    text-align:left !important;
+   
+    
+}
+h1.ui-title {
+	display:inline !important;
+	margin-left: 10px !important;
+	font-size:1em !important;
+	
+}
+.ui-btn {
+	text-align:left;
+	margin-top:5px !important;
+		
+}
+span.ui-btn-text {
+	font-size:.8em !important;	
+}
+#icon {
+	width:16px; 
+	height:16px;
+	margin-left:8px;
+}
+
+
+/*==============================additem.html Css goes here=============================*/
+#clearInput {
+	position:relative;
+}
+#displayData {
+	float:right;
+}
+#addNewEntry {
+	float:right;
+	display:none;	
+}
+legend {
+	font-style:italic;
+}
+li {
+	list-style-type: none;
+}
+#mediaTypeId {
+	margin-left: 40px;
+	font-weight:bold;
+}
+#mediaType {
+	margin-left: 45px;
+	margin-bottom:10px;	
+}
+#nameItem {
+	display:block;
+	margin-bottom:15px;
+}
+#genreItem {
+	display:block;
+	margin-bottom:15px;
+}
+#pubDate {
+	display:block;
+	margin-bottom:15px;	
+}	
+#lengthItem {
+	display:block;
+	margin-bottom:15px;	
+}
+#purchaseDate {
+	display:block;
+	margin-bottom:15px;	
+}
+#favCheckLabel {
+	margin-left:40px;
+}
+#slider {
+	margin-left: 15px;
+	margin-top:15px;
+	margin-bottom:25px;	
+}
+#notes {
+	display:block;	
+}
+#submitButton {
+	margin-top: 15px;	
+}
+#slider {
+	width:45px;
+}
