@@ -3,4 +3,5 @@ https://github.com/b36094/MIU
 
 
 [Git Repo Link]
-http://b36094.github.com/MIU/index.html
+http://b36094.github.com/MIU/Gold/index.html
+http://b36094.github.com/MIU/Bronze/index.html
