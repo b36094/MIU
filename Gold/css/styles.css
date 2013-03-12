@@ -22,18 +22,24 @@ h1.ui-title {
 }
 .ui-btn {
 	text-align:left;
-	margin-top:5px !important;
+	
 		
 }
 span.ui-btn-text {
-	font-size:.8em !important;	
+	font-size:1em !important;	
 }
 #icon {
 	width:16px; 
 	height:16px;
 	margin-left:8px;
 }
+.ui-li-count {
+	float: right;	
+}
 
+footer {
+	text-align: center;	
+}
 
 /*==============================additem.html Css goes here=============================*/
 #clearInput {
