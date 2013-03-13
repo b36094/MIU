@@ -26,7 +26,7 @@
         "purchaseDate":	["Purchase Date: ", "11-11-2004"],
         "favOpt":		["Is it a favorite item ?", "Yes"],
         "bkCopy":		["Does the item have a back-up copy ?", "No"],
-        "slideRange":	["Next Revision (in months): ", "4"],
+        "slideRange":	["Next Revision (in months): ", "3"],
         "notes":			["Notes: ", "This is a Dvd."]
     },
 
@@ -41,7 +41,7 @@
         "purchaseDate":	["Purchase Date: ", "11-11-2004"],
         "favOpt":		["Is it a favorite item ?", "Yes"],
         "bkCopy":		["Does the item have a back-up copy ?", "No"],
-        "slideRange":	["Next Revision (in months): ", "4"],
+        "slideRange":	["Next Revision (in months): ", "3"],
         "notes":			["Notes: ", "This is a Dvd."]
     },
 
