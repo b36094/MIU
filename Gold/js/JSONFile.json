@@ -1,0 +1,362 @@
+
+[
+    {
+        "name": "item1",
+        "cat": "audio",   
+        "dropMenu":		["Item Type: ", "AudioCd"],
+        "nameItem":		["Name: ", "Love is Perfect"],
+        "genreItem":		["Genre/Type: ", "Disco"],
+        "lengthItem":	["Length: ", "60"],
+        "pubDate":		["Release Date: ", "02-02-1999"],
+        "purchaseDate":	["Purchase Date: ", "11-11-2001"],
+        "favOpt":		["Is it a favorite item ?", "Yes"],
+        "bkCopy":		["Does the item have a back-up copy ?", "No"],
+        "slideRange":	["Next Revision (in months): ", "4"],
+        "notes":			["Notes: ", "This is a cd."]
+    },
+
+    {    
+        "name": "item2",
+        "cat": "video",
+        "dropMenu":		["Item Type: ", "VideoDvd"],
+        "nameItem":		["Name: ", "Shoot Me Now"],
+        "genreItem":		["Genre/Type: ", "Action"],
+        "lengthItem":	["Length: ", "190"],
+        "pubDate":		["Release Date: ", "02-02-1999"],
+        "purchaseDate":	["Purchase Date: ", "11-11-2004"],
+        "favOpt":		["Is it a favorite item ?", "Yes"],
+        "bkCopy":		["Does the item have a back-up copy ?", "No"],
+        "slideRange":	["Next Revision (in months): ", "3"],
+        "notes":			["Notes: ", "This is a Video Dvd."]
+    },
+
+    {
+        "name": "item3",
+        "cat": "audio",
+        "dropMenu":		["Item Type: ", "AudioTape"],
+        "nameItem":		["Name: ", "La-La Di"],
+        "genreItem":		["Genre/Type: ", "Disco"],
+        "lengthItem":	["Length: ", "60"],
+        "pubDate":		["Release Date: ", "02-02-1999"],
+        "purchaseDate":	["Purchase Date: ", "11-11-2004"],
+        "favOpt":		["Is it a favorite item ?", "Yes"],
+        "bkCopy":		["Does the item have a back-up copy ?", "No"],
+        "slideRange":	["Next Revision (in months): ", "3"],
+        "notes":			["Notes: ", "This is audio tape."]
+    },
+
+    {
+        "name": "item4",
+        "cat": "other",
+        "dropMenu":		["Item Type: ", "Other"],
+        "nameItem":		["Name: ", "Car Documents"],
+        "genreItem":		["Genre/Type: ", "PDF File"],
+        "lengthItem":	["Length: ", "190"],
+        "pubDate":		["Release Date: ", "02-02-1999"],
+        "purchaseDate":	["Purchase Date: ", "11-11-2004"],
+        "favOpt":		["Is it a favorite item ?", "Yes"],
+        "bkCopy":		["Does the item have a back-up copy ?", "Yes"],
+        "slideRange":	["Next Revision (in months): ", "4"],
+        "notes":			["Notes: ", "Stuff."]
+    },
+
+    {
+        "name": "item5",
+        "cat": "video",
+        "dropMenu":		["Item Type: ", "VideoTape"],
+        "nameItem":		["Name: ", "Fire Test"],
+        "genreItem":		["Genre/Type: ", "Adventure"],
+        "lengthItem":	["Length: ", "120"],
+        "pubDate":		["Release Date: ", "02-02-1999"],
+        "purchaseDate":	["Purchase Date: ", "11-11-2004"],
+        "favOpt":		["Is it a favorite item ?", "Yes"],
+        "bkCopy":		["Does the item have a back-up copy ?", "No"],
+        "slideRange":	["Next Revision (in months): ", "4"],
+        "notes":			["Notes: ", "This is a Video Tape."]
+    },
+    {
+        "name": "item6",
+        "cat": "audio",   
+        "dropMenu":     ["Item Type: ", "AudioCd"],
+        "nameItem":     ["Name: ", "'Lot to Say"],
+        "genreItem":        ["Genre/Type: ", "Disco"],
+        "lengthItem":   ["Length: ", "60"],
+        "pubDate":      ["Release Date: ", "02-02-1999"],
+        "purchaseDate": ["Purchase Date: ", "11-11-2001"],
+        "favOpt":       ["Is it a favorite item ?", "Yes"],
+        "bkCopy":       ["Does the item have a back-up copy ?", "No"],
+        "slideRange":   ["Next Revision (in months): ", "4"],
+        "notes":            ["Notes: ", "This is a cd."]
+    },
+
+    {    
+        "name": "item7",
+        "cat": "video",
+        "dropMenu":     ["Item Type: ", "VideoDvd"],
+        "nameItem":     ["Name: ", "Times of Glory"],
+        "genreItem":        ["Genre/Type: ", "Action"],
+        "lengthItem":   ["Length: ", "190"],
+        "pubDate":      ["Release Date: ", "02-02-1999"],
+        "purchaseDate": ["Purchase Date: ", "11-11-2004"],
+        "favOpt":       ["Is it a favorite item ?", "Yes"],
+        "bkCopy":       ["Does the item have a back-up copy ?", "No"],
+        "slideRange":   ["Next Revision (in months): ", "4"],
+        "notes":            ["Notes: ", "This is a Dvd."]
+    },
+
+    {
+        "name": "item8",
+        "cat": "audio",
+        "dropMenu":     ["Item Type: ", "AudioTape"],
+        "nameItem":     ["Name: ", "La-La Di"],
+        "genreItem":        ["Genre/Type: ", "Disco"],
+        "lengthItem":   ["Length: ", "190"],
+        "pubDate":      ["Release Date: ", "02-02-1999"],
+        "purchaseDate": ["Purchase Date: ", "11-11-2004"],
+        "favOpt":       ["Is it a favorite item ?", "Yes"],
+        "bkCopy":       ["Does the item have a back-up copy ?", "No"],
+        "slideRange":   ["Next Revision (in months): ", "4"],
+        "notes":            ["Notes: ", "This is a Dvd."]
+    },
+
+    {
+        "name": "item9",
+        "cat": "document",
+        "dropMenu":     ["Item Type: ", "Other"],
+        "nameItem":     ["Name: ", "Windows 98"],
+        "genreItem":        ["Genre/Type: ", "Action"],
+        "lengthItem":   ["Length: ", "190"],
+        "pubDate":      ["Release Date: ", "02-02-1999"],
+        "purchaseDate": ["Purchase Date: ", "11-11-2004"],
+        "favOpt":       ["Is it a favorite item ?", "Yes"],
+        "bkCopy":       ["Does the item have a back-up copy ?", "No"],
+        "slideRange":   ["Next Revision (in months): ", "4"],
+        "notes":            ["Notes: ", "This is a Dvd."]
+    },
+
+    {
+        "name": "item10",
+        "cat": "video",
+        "dropMenu":     ["Item Type: ", "VideoTape"],
+        "nameItem":     ["Name: ", "The Fire Fighter"],
+        "genreItem":        ["Genre/Type: ", "Adventure"],
+        "lengthItem":   ["Length: ", "190"],
+        "pubDate":      ["Release Date: ", "02-02-1999"],
+        "purchaseDate": ["Purchase Date: ", "11-11-2004"],
+        "favOpt":       ["Is it a favorite item ?", "Yes"],
+        "bkCopy":       ["Does the item have a back-up copy ?", "No"],
+        "slideRange":   ["Next Revision (in months): ", "4"],
+        "notes":            ["Notes: ", "This is a Dvd."]
+    },
+    {
+        "name": "item11",
+        "cat": "audio",   
+        "dropMenu":     ["Item Type: ", "AudioCd"],
+        "nameItem":     ["Name: ", "From the Heart"],
+        "genreItem":        ["Genre/Type: ", "Disco"],
+        "lengthItem":   ["Length: ", "60"],
+        "pubDate":      ["Release Date: ", "02-02-1999"],
+        "purchaseDate": ["Purchase Date: ", "11-11-2001"],
+        "favOpt":       ["Is it a favorite item ?", "Yes"],
+        "bkCopy":       ["Does the item have a back-up copy ?", "No"],
+        "slideRange":   ["Next Revision (in months): ", "4"],
+        "notes":            ["Notes: ", "This is a cd."]
+    },
+
+    {    
+        "name": "item12",
+        "cat": "video",
+        "dropMenu":     ["Item Type: ", "VideoDvd"],
+        "nameItem":     ["Name: ", "Elimination"],
+        "genreItem":        ["Genre/Type: ", "Action"],
+        "lengthItem":   ["Length: ", "190"],
+        "pubDate":      ["Release Date: ", "02-02-1999"],
+        "purchaseDate": ["Purchase Date: ", "11-11-2004"],
+        "favOpt":       ["Is it a favorite item ?", "Yes"],
+        "bkCopy":       ["Does the item have a back-up copy ?", "No"],
+        "slideRange":   ["Next Revision (in months): ", "4"],
+        "notes":            ["Notes: ", "This is a Dvd."]
+    },
+
+    {
+        "name": "item13",
+        "cat": "audio",
+        "dropMenu":     ["Item Type: ", "AudioTape"],
+        "nameItem":     ["Name: ", "La-La Di"],
+        "genreItem":        ["Genre/Type: ", "Disco"],
+        "lengthItem":   ["Length: ", "190"],
+        "pubDate":      ["Release Date: ", "02-02-1999"],
+        "purchaseDate": ["Purchase Date: ", "11-11-2004"],
+        "favOpt":       ["Is it a favorite item ?", "Yes"],
+        "bkCopy":       ["Does the item have a back-up copy ?", "No"],
+        "slideRange":   ["Next Revision (in months): ", "4"],
+        "notes":            ["Notes: ", "This is a Dvd."]
+    },
+
+    {
+        "name": "item14",
+        "cat": "other",
+        "dropMenu":     ["Item Type: ", "Other"],
+        "nameItem":     ["Name: ", "Water Bill"],
+        "genreItem":        ["Genre/Type: ", "Action"],
+        "lengthItem":   ["Length: ", "190"],
+        "pubDate":      ["Release Date: ", "02-02-1999"],
+        "purchaseDate": ["Purchase Date: ", "11-11-2004"],
+        "favOpt":       ["Is it a favorite item ?", "Yes"],
+        "bkCopy":       ["Does the item have a back-up copy ?", "No"],
+        "slideRange":   ["Next Revision (in months): ", "4"],
+        "notes":            ["Notes: ", "This is a Dvd."]
+    },
+
+    {
+        "name": "item15",
+        "cat": "video",
+        "dropMenu":     ["Item Type: ", "VideoTape"],
+        "nameItem":     ["Name: ", "Fire Test"],
+        "genreItem":        ["Genre/Type: ", "Adventure"],
+        "lengthItem":   ["Length: ", "190"],
+        "pubDate":      ["Release Date: ", "02-02-1999"],
+        "purchaseDate": ["Purchase Date: ", "11-11-2004"],
+        "favOpt":       ["Is it a favorite item ?", "Yes"],
+        "bkCopy":       ["Does the item have a back-up copy ?", "No"],
+        "slideRange":   ["Next Revision (in months): ", "4"],
+        "notes":            ["Notes: ", "This is a Dvd."]
+    },
+    {
+        "name": "item16",
+        "cat": "audio",   
+        "dropMenu":     ["Item Type: ", "AudioCd"],
+        "nameItem":     ["Name: ", "Sing it Now"],
+        "genreItem":        ["Genre/Type: ", "Disco"],
+        "lengthItem":   ["Length: ", "60"],
+        "pubDate":      ["Release Date: ", "02-02-1999"],
+        "purchaseDate": ["Purchase Date: ", "11-11-2001"],
+        "favOpt":       ["Is it a favorite item ?", "Yes"],
+        "bkCopy":       ["Does the item have a back-up copy ?", "No"],
+        "slideRange":   ["Next Revision (in months): ", "4"],
+        "notes":            ["Notes: ", "This is a cd."]
+    },
+
+    {    
+        "name": "item17",
+        "cat": "video",
+        "dropMenu":     ["Item Type: ", "VideoDvd"],
+        "nameItem":     ["Name: ", "Shoot Me Now"],
+        "genreItem":        ["Genre/Type: ", "Action"],
+        "lengthItem":   ["Length: ", "190"],
+        "pubDate":      ["Release Date: ", "02-02-1999"],
+        "purchaseDate": ["Purchase Date: ", "11-11-2004"],
+        "favOpt":       ["Is it a favorite item ?", "Yes"],
+        "bkCopy":       ["Does the item have a back-up copy ?", "No"],
+        "slideRange":   ["Next Revision (in months): ", "4"],
+        "notes":            ["Notes: ", "This is a Dvd."]
+    },
+
+    {
+        "name": "item18",
+        "cat": "audio",
+        "dropMenu":     ["Item Type: ", "AudioTape"],
+        "nameItem":     ["Name: ", "La-La Di"],
+        "genreItem":        ["Genre/Type: ", "Disco"],
+        "lengthItem":   ["Length: ", "190"],
+        "pubDate":      ["Release Date: ", "02-02-1999"],
+        "purchaseDate": ["Purchase Date: ", "11-11-2004"],
+        "favOpt":       ["Is it a favorite item ?", "Yes"],
+        "bkCopy":       ["Does the item have a back-up copy ?", "No"],
+        "slideRange":   ["Next Revision (in months): ", "4"],
+        "notes":            ["Notes: ", "This is a Dvd."]
+    },
+
+    {
+        "name": "item19",
+        "cat": "other",
+        "dropMenu":     ["Item Type: ", "Other"],
+        "nameItem":     ["Name: ", "Guitar Photo"],
+        "genreItem":        ["Genre/Type: ", "Action"],
+        "lengthItem":   ["Length: ", "190"],
+        "pubDate":      ["Release Date: ", "02-02-1999"],
+        "purchaseDate": ["Purchase Date: ", "11-11-2004"],
+        "favOpt":       ["Is it a favorite item ?", "Yes"],
+        "bkCopy":       ["Does the item have a back-up copy ?", "No"],
+        "slideRange":   ["Next Revision (in months): ", "4"],
+        "notes":            ["Notes: ", "This is a Dvd."]
+    },
+
+    {
+        "name": "item20",
+        "cat": "video",
+        "dropMenu":     ["Item Type: ", "VideoTape"],
+        "nameItem":     ["Name: ", "Fire Test"],
+        "genreItem":        ["Genre/Type: ", "Adventure"],
+        "lengthItem":   ["Length: ", "190"],
+        "pubDate":      ["Release Date: ", "02-02-1999"],
+        "purchaseDate": ["Purchase Date: ", "11-11-2004"],
+        "favOpt":       ["Is it a favorite item ?", "Yes"],
+        "bkCopy":       ["Does the item have a back-up copy ?", "No"],
+        "slideRange":   ["Next Revision (in months): ", "4"],
+        "notes":            ["Notes: ", "This is a Dvd."]
+    },
+    {
+        "name": "item21",
+        "cat": "audio",   
+        "dropMenu":		["Item Type: ", "AudioCd"],
+        "nameItem":		["Name: ", "After Tomorrow"],
+        "genreItem":		["Genre/Type: ", "Disco"],
+        "lengthItem":	["Length: ", "60"],
+        "pubDate":		["Release Date: ", "02-02-1999"],
+        "purchaseDate":	["Purchase Date: ", "11-11-2001"],
+        "favOpt":		["Is it a favorite item ?", "Yes"],
+        "bkCopy":		["Does the item have a back-up copy ?", "No"],
+        "slideRange":	["Next Revision (in months): ", "4"],
+        "notes":			["Notes: ", "This is a cd."]
+    },
+
+    {    
+        "name": "item22",
+        "cat": "video",
+        "dropMenu":		["Item Type: ", "VideoDvd"],
+        "nameItem":		["Name: ", "Shoot Me Now"],
+        "genreItem":		["Genre/Type: ", "Action"],
+        "lengthItem":	["Length: ", "190"],
+        "pubDate":		["Release Date: ", "02-02-1999"],
+        "purchaseDate":	["Purchase Date: ", "11-11-2004"],
+        "favOpt":		["Is it a favorite item ?", "Yes"],
+        "bkCopy":		["Does the item have a back-up copy ?", "No"],
+        "slideRange":	["Next Revision (in months): ", "4"],
+        "notes":			["Notes: ", "This is a Dvd."]
+    },
+
+    {
+        "name": "item23",
+        "cat": "audio",
+        "dropMenu":		["Item Type: ", "AudioTape"],
+        "nameItem":		["Name: ", "La-La Di"],
+        "genreItem":		["Genre/Type: ", "Disco"],
+        "lengthItem":	["Length: ", "190"],
+        "pubDate":		["Release Date: ", "02-02-1999"],
+        "purchaseDate":	["Purchase Date: ", "11-11-2004"],
+        "favOpt":		["Is it a favorite item ?", "Yes"],
+        "bkCopy":		["Does the item have a back-up copy ?", "No"],
+        "slideRange":	["Next Revision (in months): ", "4"],
+        "notes":			["Notes: ", "This is a Dvd."]
+    },
+
+   
+    {
+        "name": "item25",
+        "cat": "video",
+        "dropMenu":		["Item Type: ", "VideoTape"],
+        "nameItem":		["Name: ", "Fire Test"],
+        "genreItem":		["Genre/Type: ", "Adventure"],
+        "lengthItem":	["Length: ", "190"],
+        "pubDate":		["Release Date: ", "02-02-1999"],
+        "purchaseDate":	["Purchase Date: ", "11-11-2004"],
+        "favOpt":		["Is it a favorite item ?", "Yes"],
+        "bkCopy":		["Does the item have a back-up copy ?", "No"],
+        "slideRange":	["Next Revision (in months): ", "4"],
+        "notes":			["Notes: ", "This is a Dvd."]
+    }
+
+]
+
+

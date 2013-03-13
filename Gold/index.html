@@ -14,6 +14,12 @@
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
 	
+	<!-- CSS Local -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	
+	<!-- CSS Font Style -->
+	<link href='http://fonts.googleapis.com/css?family=Tauri' rel='stylesheet' type='text/css'>
+	
 	<!-- Meta Data -->
 	<meta charset = "utf-8"/>
 	<meta name = "description" content = "Media Library"/>
@@ -23,47 +29,672 @@
 	<meta name = "viewport" content = "target-densitydpi = device-dpi"/>
 	<meta name = "HandheldFriendly" content = "true"/>
 	<meta name = "MobileOptimized" content = "320"/>
-	
-	<!-- Css File Link -->
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	
-	<!-- Css Font Style -->
-	<link href='http://fonts.googleapis.com/css?family=Tauri' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-	<!-- Header goes here-->
-	<header data-role = "header">
-		<h1>Home Media Library</h1>
-		<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
-	</header>
-	<img src = "images/Untitled-2.png"/>
-	
-	
-	<!-- Browsing feature goes here -->
-	<div data-role = "content">
+	<!-- This is the Main Page ------------------------------------------------------------------------------------------------------------------>	
+	<div data-role = "page" id = "mainPage">
+		<!-- Header goes here-->
+		<header data-role = "header" data-position = "fixed">
+			<h1></h1>
+			<!-- Browsing feature goes here -->
+			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+		</header>
+		
+		<!-- Banner goes here -->		
+		<img src = "images/Untitled-2.png"/>
+		
 		<!--Search feature goes here -->
-		<form>		
-			<input type = "search" placeholder = "Look-up entries here"></input>	
+		<form>			
+			<input data-role = "filter" type = "search" id = "searchField" placeholder = "Search Entries" data-filter="true"></input>	
+				
+				
+		
+		
+		<!--Devider Goes Here -->		
+		<ul data-role = "listview">
+			<li data-role = "devider" data-theme = "b"><h4>Browse by category:</h4></li>
+		</ul>	
+		<div data-role = "content">	
+			<div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+		    	<div data-role = "collapsible">
+		      	<h3>Audio Entries<span class="ui-li-count">4</span></h3>
+		       	<ul data-role = "listview"  class="ui-icon-alt">
+						<li data-role = "devider" data-theme = "b">Audio Entries:</li>
+						<li><a href="#lipp" data-transition = "slide"><p>Love Is Perfect</p><p>Type: Audio Cd</p><img src = "images/smAudio.png" class="ui-li-icon ui-corner-none"></img></a></li>
+						<li><a href="#lldp" data-transition = "slide"><p>La-la Di</p><p>Type: Audio Tape</p><img src = "images/smAudio.png" class="ui-li-icon ui-corner-none"></img></a></li>
+						<li><a href="#ltsp" data-transition = "slide"><p>' Lot to Say</p><p>Type: Audio Cd</p><img src = "images/smAudio.png" class="ui-li-icon ui-corner-none"></img></a></li>
+						<li><a href="#fthp" data-transition = "slide"><p>From the Heard</p><p>Type: Audio Cd</p><img src = "images/smAudio.png" class="ui-li-icon ui-corner-none"></img></a></li>
+					</ul>
+		   	</div>
+		   	
+		   	<div data-role="collapsible">
+		      	<h3>Video Entries<span class="ui-li-count">3</span></h3>
+		      	<ul data-role = "listview"  class="ui-icon-alt">
+						<li data-role = "devider" data-theme = "b">Video Entries:</li>
+						<li><a href="#smnp" data-transition = "slide"><p>Shoot me Now</p><p>Type: Video Dvd</p><img src = "images/smVideo.png" class="ui-li-icon ui-corner-none"></img></a></li>
+						<li><a href="#ftp" data-transition = "slide"><p>Fire Test</p><p>Type: Video Tape</p><img src = "images/smVideo.png" class="ui-li-icon ui-corner-none"></img></a></li>
+						<li><a href="#togp" data-transition = "slide"><p>Times of Glory</p><p>Type: Video Dvd</p><img src = "images/smVideo.png" class="ui-li-icon ui-corner-none"></img></a></li>
+					</ul>
+		   	</div>
+		   	
+		   	<div data-role="collapsible">
+		      	<h3>Book Entries<span class="ui-li-count">2</span></h3>
+		      	<ul data-role = "listview"  class="ui-icon-alt">
+						<li data-role = "devider" data-theme = "b">Book Entries:</li>
+						<li><a href="#dip" data-transition = "slide"><p>Designing Interfaces</p><p>Type: Reference</p><img src = "images/smBook.png" class="ui-li-icon ui-corner-none"></img></a></li>
+						<li><a href="#lhotpp" data-transition = "slide"><p>Little House on the Prairie</p><p>Type: Literature</p><img src = "images/smBook.png" class="ui-li-icon ui-corner-none"></img></a></li>
+					
+					</ul>	
+		   	</div>
+		   	
+		   	<div data-role="collapsible">
+		      	<h3>Other Entries<span class="ui-li-count">2</span></h3>
+		      	<ul data-role = "listview"  class="ui-icon-alt">
+						<li data-role = "devider" data-theme = "b">Other Entries:</li>
+						<li><a href="#cdp" data-transition = "slide"><p>Car Documents</p><p>Type: Other</p><img src = "images/smOther.png" class="ui-li-icon ui-corner-none"></img></a></li>
+						<li><a href="#w9cp" data-transition = "slide"><p>Windows 98 Cd</p><p>Type: Other</p><img src = "images/smOther.png" class="ui-li-icon ui-corner-none"></img></a></li>
+					</ul>
+		   	</div>
+			</div>
+			
+		</div>
 		</form>
+		
+		<!-- Navbar goes here -->		
+				
+		
+		<!--Footer goes here-->	
+		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
+			<div data-role="navbar" id = "navbar">
+      	<ul>
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#mainPage" data-icon="home" class="ui-btn-active" data-theme = "a">Home</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
+         </ul>
+      </div>
+		</footer>
 		
 		
 	</div>
 	
-	<!--Buttons go here -->		
+	<!-- This is the Info Page ------------------------------------------------------------------------------------------------------------------>
+	<div data-role = "page" id = "moreInfo" >
+		<!-- Header goes here-->
+		<header data-role = "header" data-position = "fixed">
+			 			
+			<h1></h1>
+			<!-- Browsing feature goes here -->
+			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
+			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+		</header>
+		
+		<!-- Banner goes here -->		
+		<img src = "images/Untitled-2.png"/>
+		
+		<div data-role = "content">
+			<h1>About Page: </h1>
+			<p>This is a Home Media Library application designed for domestic use.</p>		
+		</div>
+		
+		
+		<!--Footer goes here-->	
+		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
+			<div data-role="navbar" id = "navbar">
+      		<ul>
+         		<li><a href="#moreInfo" data-icon="info" data-theme = "a" class = "ui-btn-active">Info</a></li>
+            	<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
+            	<li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
+         	</ul>
+      	</div>
+		</footer>
+		
+	</div>
+	
+	
+	<!-- This is the News Stream Page ------------------------------------------------------------------------------------------------------------------>
+	<div data-role = "page" id = "newsStream">
+		<!-- Header goes here-->
+		<header data-role = "header" data-position = "fixed">
+			 			
+			<h1></h1>
+			<!-- Browsing feature goes here -->
+			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
+			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+		</header>
+		
+		<!-- Banner goes here -->		
+		<img src = "images/Untitled-2.png"/>
+		
+		<div data-role = "content">
+			<ul data-role="listview" data-inset="true">
+    			<li data-role="list-divider">:: Next Revision ::</li>
+	    		<li>
+	    			<a href="index.html">
+						<img src = "images/Other.png"></img>	        			
+	        			<p><strong>Car Documents</strong></p>
+	        			<p>Type: Other</p>
+	        			<p class="ui-li-aside"><strong>1 Months</strong></p>
+	    			</a>
+	    		</li>
+	    		
+	    		<li>
+	    			<a href="index.html">
+						<img src = "images/VideoDvd.png"></img>	        			
+	        			<p><strong>Elimination</strong></p>
+	        			<p>Type: Video Dvd</p>
+	        			<p class="ui-li-aside"><strong>2 Months</strong></p>
+	    			</a>
+	    		</li>
+	    		
+	    		<li>
+	    			<a href="index.html">
+						<img src = "images/AudioTape.png"></img>	        			
+	        			<p><strong>La-la Di</strong></p>
+	        			<p>Type: AudioTape</p>
+	        			<p class="ui-li-aside"><strong>3 Months</strong></p>
+	    			</a>
+	    		</li>
+	    		
+	    		<li>
+	    			<a href="index.html">
+	    				<img src = "images/VideoDvd.png"></img>
+	        			<p><strong>Shoot Me Now</strong></p>
+	        			<p>Type: Video Dvd</p>
+	        			<p class="ui-li-aside"><strong>4 Months</strong></p>
+	    			</a>
+	    		</li>
+	    		
+	    		<li>
+	    			<a href="index.html">
+	    				<img src = "images/AudioCd.png"></img>
+	        			<p><strong>Love Is Perfect</strong></p>
+	        			<p>Type: Audio Cd</p>
+	        			<p class="ui-li-aside"><strong>5 Months</strong></p>
+	    			</a>
+	    		</li>
+    		</ul>		
+		</div>
+		
+		
+		<!--Footer goes here-->	
+		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
+			<div data-role="navbar" id = "navbar">
+      	<ul>
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a" class = "ui-btn-active">News Stream</a></li>
+         </ul>
+      </div>
+		</footer>
+		
+	</div>
+	
+	<!-- This is the "Love is Perfect" Page ------------------------------------------------------------------------------------------------------------------>
+	<div data-role = "page" id = "lipp">
 			
-		<ul data-role = "listview">
-			<li data-role = "devider" data-theme = "b">Browse by category:</li>
-			<li> <a href = "error" rel = "external" id = "audioBrowse">Audio Entries</a></li>			
-			<li> <a href = "error" rel = "external" id = "videoBrowse">Video Entries</a></li>			
-			<li> <a href = "error" rel = "external" id = "dataBrowse">Data Entries</a></li>			
-			<li> <a href = "error" rel = "external" id = "otherBrowse">Other Entries</a></li>			
-						
-		</ul>		
-	<!--Footer goes here-->	
-	<footer data-role = "footer"></footer>
+			<!-- Header goes here-->
+		<header data-role = "header" data-position = "fixed">
+			 			
+			<h1></h1>
+			<!-- Browsing feature goes here -->
+			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
+			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+		</header>
+		
+		<!-- Banner goes here -->		
+		<img src = "images/Untitled-2.png"/>
+		
+		<div data-role = "content">
+		<!-- Content goes here -->
+		<ul data-role = "listview" data-inset = "true">
+			<li data-role = "devider" data-theme = "b"><h2>Name: Love is Perfect</h2></li>
+			<li><img src = "images/AudioCd.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Audio Cd</span></p></li>
+			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">Disco</span></p></li>
+			<li><p><strong>Length:</strong><span class = "ui-li-aside">60 Minutes</span></p></li>		
+			<li><p><strong>Release Date:</strong><span class = "ui-li-aside">02-02-1999</span></p></li>		
+			<li><p><strong>Purchase Date:</strong><span class = "ui-li-aside">11-11-2001</span></p></li>		
+			<li><p><strong>Favorite Item:</strong><span class = "ui-li-aside">Yes</span></p></li>		
+			<li><p><strong>Backup Copy:</strong> <span class = "ui-li-aside">No</span></p></li>		
+			<li><p><strong>Notes:</strong><span class = "ui-li-aside">This is a great CD.</span></p></li>		
+		</ul>
+		</div>
+	
+		<!--Footer goes here-->	
+		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
+			<div data-role="navbar" id = "navbar">
+      	<ul>
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
+         </ul>
+      </div>
+		</footer>
+	</div>
+	
+	<!-- This is the "La-la Di" Page ------------------------------------------------------------------------------------------------------------------>
+	<div data-role = "page" id = "lldp">
+			
+			<!-- Header goes here-->
+		<header data-role = "header" data-position = "fixed">
+			 			
+			<h1></h1>
+			<!-- Browsing feature goes here -->
+			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
+			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+		</header>
+		
+		<!-- Banner goes here -->		
+		<img src = "images/Untitled-2.png"/>
+		
+		<div data-role = "content">
+		<!-- Content goes here -->
+		<ul data-role = "listview" data-inset = "true">
+			<li data-role = "devider" data-theme = "b"><h2>Name: La-la Di</h2></li>
+			<li><img src = "images/AudioTape.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Audio Tape</span></p></li>
+			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">Disco</span></p></li>		
+			<li><p><strong>Length:</strong><span class = "ui-li-aside">60 Minutes</span></p></li>		
+			<li><p><strong>Release Date:</strong><span class = "ui-li-aside">02-02-1999</span></p></li>		
+			<li><p><strong>Purchase Date:</strong><span class = "ui-li-aside">11-11-2004</span></p></li>		
+			<li><p><strong>Favorite Item:</strong><span class = "ui-li-aside">Yes</span></p></li>		
+			<li><p><strong>Backup Copy:</strong> <span class = "ui-li-aside">No</span></p></li>		
+			<li><p><strong>Notes:</strong><span class = "ui-li-aside">This is an audio tape.</span></p></li>		
+		</ul>
+		</div>
+	
+		<!--Footer goes here-->	
+		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
+			<div data-role="navbar" id = "navbar">
+      	<ul>
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
+         </ul>
+      </div>
+		</footer>
+	</div>
+	
+	<!-- This is the "'Lot to Say" Page ------------------------------------------------------------------------------------------------------------------>
+	<div data-role = "page" id = "ltsp">
+			
+			<!-- Header goes here-->
+		<header data-role = "header" data-position = "fixed">
+			 			
+			<h1></h1>
+			<!-- Browsing feature goes here -->
+			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
+			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+		</header>
+		
+		<!-- Banner goes here -->		
+		<img src = "images/Untitled-2.png"/>
+		
+		<div data-role = "content">
+		<!-- Content goes here -->
+		<ul data-role = "listview" data-inset = "true">
+			<li data-role = "devider" data-theme = "b"><h2>Name: 'Lot to Say</h2></li>
+			<li><img src = "images/AudioCd.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Audio Cd</span></p></li>
+			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">Disco</span></p></li>		
+			<li><p><strong>Length:</strong><span class = "ui-li-aside">60 Minutes</span></p></li>		
+			<li><p><strong>Release Date:</strong><span class = "ui-li-aside">02-02-1999</span></p></li>		
+			<li><p><strong>Purchase Date:</strong><span class = "ui-li-aside">11-11-2001</span></p></li>		
+			<li><p><strong>Favorite Item:</strong><span class = "ui-li-aside">Yes</span></p></li>		
+			<li><p><strong>Backup Copy:</strong> <span class = "ui-li-aside">No</span></p></li>		
+			<li><p><strong>Notes:</strong><span class = "ui-li-aside">This is an audio CD.</span></p></li>		
+		</ul>
+		</div>
+	
+		<!--Footer goes here-->	
+		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
+			<div data-role="navbar" id = "navbar">
+      	<ul>
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
+         </ul>
+      </div>
+		</footer>
+	</div>
+	
+	<!-- This is the "From the Heart" Page ------------------------------------------------------------------------------------------------------------------>
+	<div data-role = "page" id = "fthp">
+			
+			<!-- Header goes here-->
+		<header data-role = "header" data-position = "fixed">
+			 			
+			<h1></h1>
+			<!-- Browsing feature goes here -->
+			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
+			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+		</header>
+		
+		<!-- Banner goes here -->		
+		<img src = "images/Untitled-2.png"/>
+		
+		<div data-role = "content">
+		<!-- Content goes here -->
+		<ul data-role = "listview" data-inset = "true">
+			<li data-role = "devider" data-theme = "b"><h2>Name: From the Heart</h2></li>
+			<li><img src = "images/AudioCd.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Audio Cd</span></p></li>
+			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">Disco</span></p></li>		
+			<li><p><strong>Length:</strong><span class = "ui-li-aside">60 Minutes</span></p></li>		
+			<li><p><strong>Release Date:</strong><span class = "ui-li-aside">02-02-1999</span></p></li>		
+			<li><p><strong>Purchase Date:</strong><span class = "ui-li-aside">11-11-2001</span></p></li>		
+			<li><p><strong>Favorite Item:</strong><span class = "ui-li-aside">Yes</span></p></li>		
+			<li><p><strong>Backup Copy:</strong> <span class = "ui-li-aside">No</span></p></li>		
+			<li><p><strong>Notes:</strong><span class = "ui-li-aside">This is an audio CD.</span></p></li>		
+		</ul>
+		</div>
+	
+		<!--Footer goes here-->	
+		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
+			<div data-role="navbar" id = "navbar">
+      	<ul>
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
+         </ul>
+      </div>
+		</footer>
+	</div>
+	
+	<!-- This is the "Shoot Me Now" Page ------------------------------------------------------------------------------------------------------------------>
+	<div data-role = "page" id = "smnp">
+			
+			<!-- Header goes here-->
+		<header data-role = "header" data-position = "fixed">
+			 			
+			<h1></h1>
+			<!-- Browsing feature goes here -->
+			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
+			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+		</header>
+		
+		<!-- Banner goes here -->		
+		<img src = "images/Untitled-2.png"/>
+		
+		<div data-role = "content">
+		<!-- Content goes here -->
+		<ul data-role = "listview" data-inset = "true">
+			<li data-role = "devider" data-theme = "b"><h2>Name: Shoot Me Now</h2></li>
+			<li><img src = "images/VideoDvd.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Video Dvd</span></p></li>
+			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">Action</span></p></li>		
+			<li><p><strong>Length:</strong><span class = "ui-li-aside">190 Minutes</span></p></li>		
+			<li><p><strong>Release Date:</strong><span class = "ui-li-aside">02-02-1999</span></p></li>		
+			<li><p><strong>Purchase Date:</strong><span class = "ui-li-aside">11-11-2001</span></p></li>		
+			<li><p><strong>Favorite Item:</strong><span class = "ui-li-aside">Yes</span></p></li>		
+			<li><p><strong>Backup Copy:</strong> <span class = "ui-li-aside">No</span></p></li>		
+			<li><p><strong>Notes:</strong><span class = "ui-li-aside">This is a Video Dvd.</span></p></li>		
+		</ul>
+		</div>
+	
+		<!--Footer goes here-->	
+		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
+			<div data-role="navbar" id = "navbar">
+      	<ul>
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
+         </ul>
+      </div>
+		</footer>
+	</div>
+	
+	<!-- This is the "Fire Test" ------------------------------------------------------------------------------------------------------------------>
+	<div data-role = "page" id = "ftp">
+			
+			<!-- Header goes here-->
+		<header data-role = "header" data-position = "fixed">
+			 			
+			<h1></h1>
+			<!-- Browsing feature goes here -->
+			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
+			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+		</header>
+		
+		<!-- Banner goes here -->		
+		<img src = "images/Untitled-2.png"/>
+		
+		<div data-role = "content">
+		<!-- Content goes here -->
+		<ul data-role = "listview" data-inset = "true">
+			<li data-role = "devider" data-theme = "b"><h2>Name: Fire Test</h2></li>
+			<li><img src = "images/VideoDvd.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Video Tape</span></p></li>
+			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">Adventure</span></p></li>		
+			<li><p><strong>Length:</strong><span class = "ui-li-aside">120 Minutes</span></p></li>		
+			<li><p><strong>Release Date:</strong><span class = "ui-li-aside">02-02-1999</span></p></li>		
+			<li><p><strong>Purchase Date:</strong><span class = "ui-li-aside">11-11-2004</span></p></li>		
+			<li><p><strong>Favorite Item:</strong><span class = "ui-li-aside">Yes</span></p></li>		
+			<li><p><strong>Backup Copy:</strong> <span class = "ui-li-aside">No</span></p></li>		
+			<li><p><strong>Notes:</strong><span class = "ui-li-aside">This is a Video Tape.</span></p></li>		
+		</ul>
+		</div>
+	
+		<!--Footer goes here-->	
+		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
+			<div data-role="navbar" id = "navbar">
+      	<ul>
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
+         </ul>
+      </div>
+		</footer>
+	</div>
+	
+	<!-- This is the "Times of Glory" ------------------------------------------------------------------------------------------------------------------>
+	<div data-role = "page" id = "togp">
+			
+			<!-- Header goes here-->
+		<header data-role = "header" data-position = "fixed">
+			 			
+			<h1></h1>
+			<!-- Browsing feature goes here -->
+			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
+			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+		</header>
+		
+		<!-- Banner goes here -->		
+		<img src = "images/Untitled-2.png"/>
+		
+		<div data-role = "content">
+		<!-- Content goes here -->
+		<ul data-role = "listview" data-inset = "true">
+			<li data-role = "devider" data-theme = "b"><h2>Name: Times of Glory</h2></li>
+			<li><img src = "images/VideoDvd.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Video Dvd</span></p></li>
+			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">Adventure</span></p></li>		
+			<li><p><strong>Length:</strong><span class = "ui-li-aside">190 Minutes</span></p></li>		
+			<li><p><strong>Release Date:</strong><span class = "ui-li-aside">02-02-1999</span></p></li>		
+			<li><p><strong>Purchase Date:</strong><span class = "ui-li-aside">11-11-2004</span></p></li>		
+			<li><p><strong>Favorite Item:</strong><span class = "ui-li-aside">Yes</span></p></li>		
+			<li><p><strong>Backup Copy:</strong> <span class = "ui-li-aside">No</span></p></li>		
+			<li><p><strong>Notes:</strong><span class = "ui-li-aside">This is a Video Dvd.</span></p></li>		
+		</ul>
+		</div>
+	
+		<!--Footer goes here-->	
+		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
+			<div data-role="navbar" id = "navbar">
+      	<ul>
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
+         </ul>
+      </div>
+		</footer>
+	</div>
+	
+	<!-- This is the "Designing Interfaces" ------------------------------------------------------------------------------------------------------------------>
+	<div data-role = "page" id = "dip">
+			
+			<!-- Header goes here-->
+		<header data-role = "header" data-position = "fixed">
+			 			
+			<h1></h1>
+			<!-- Browsing feature goes here -->
+			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
+			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+		</header>
+		
+		<!-- Banner goes here -->		
+		<img src = "images/Untitled-2.png"/>
+		
+		<div data-role = "content">
+		<!-- Content goes here -->
+		<ul data-role = "listview" data-inset = "true">
+			<li data-role = "devider" data-theme = "b"><h2>Name: Designing Interfaces</h2></li>
+			<li><img src = "images/Book.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Reference</span></p></li>
+			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">PDF File</span></p></li>		
+			<li><p><strong>Length:</strong><span class = "ui-li-aside">550 Pages</span></p></li>		
+			<li><p><strong>Release Date:</strong><span class = "ui-li-aside">02-02-1999</span></p></li>		
+			<li><p><strong>Purchase Date:</strong><span class = "ui-li-aside">11-11-2004</span></p></li>		
+			<li><p><strong>Favorite Item:</strong><span class = "ui-li-aside">No</span></p></li>		
+			<li><p><strong>Backup Copy:</strong> <span class = "ui-li-aside">No</span></p></li>		
+			<li><p><strong>Notes:</strong><span class = "ui-li-aside">This is a Textbook.</span></p></li>		
+		</ul>
+		</div>
+	
+		<!--Footer goes here-->	
+		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
+			<div data-role="navbar" id = "navbar">
+      	<ul>
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
+         </ul>
+      </div>
+		</footer>
+	</div>
+	
+	<!-- This is the "Little House on The Prairie" ------------------------------------------------------------------------------------------------------------------>
+	<div data-role = "page" id = "lhotpp">
+			
+			<!-- Header goes here-->
+		<header data-role = "header" data-position = "fixed">
+			 			
+			<h1></h1>
+			<!-- Browsing feature goes here -->
+			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
+			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+		</header>
+		
+		<!-- Banner goes here -->		
+		<img src = "images/Untitled-2.png"/>
+		
+		<div data-role = "content">
+		<!-- Content goes here -->
+		<ul data-role = "listview" data-inset = "true">
+			<li data-role = "devider" data-theme = "b"><h2>Name: Little House on The Prairie</h2></li>
+			<li><img src = "images/Book.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Literature</span></p></li>
+			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">PDF File</span></p></li>		
+			<li><p><strong>Length:</strong><span class = "ui-li-aside">550 Pages</span></p></li>		
+			<li><p><strong>Release Date:</strong><span class = "ui-li-aside">02-02-1999</span></p></li>		
+			<li><p><strong>Purchase Date:</strong><span class = "ui-li-aside">11-11-2004</span></p></li>		
+			<li><p><strong>Favorite Item:</strong><span class = "ui-li-aside">No</span></p></li>		
+			<li><p><strong>Backup Copy:</strong> <span class = "ui-li-aside">No</span></p></li>		
+			<li><p><strong>Notes:</strong><span class = "ui-li-aside">This is a Textbook.</span></p></li>		
+		</ul>
+		</div>
+	
+		<!--Footer goes here-->	
+		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
+			<div data-role="navbar" id = "navbar">
+      	<ul>
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
+         </ul>
+      </div>
+		</footer>
+	</div>
 	
 	
+	<!-- This is the "Car Documents" ------------------------------------------------------------------------------------------------------------------>
+	<div data-role = "page" id = "cdp">
+			
+			<!-- Header goes here-->
+		<header data-role = "header" data-position = "fixed">
+			 			
+			<h1></h1>
+			<!-- Browsing feature goes here -->
+			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
+			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+		</header>
+		
+		<!-- Banner goes here -->		
+		<img src = "images/Untitled-2.png"/>
+		
+		<div data-role = "content">
+		<!-- Content goes here -->
+		<ul data-role = "listview" data-inset = "true">
+			<li data-role = "devider" data-theme = "b"><h2>Name: Car Documents</h2></li>
+			<li><img src = "images/Other.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Other</span></p></li>
+			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">PDF File</span></p></li>		
+			<li><p><strong>Length:</strong><span class = "ui-li-aside">20 Pages</span></p></li>		
+			<li><p><strong>Release Date:</strong><span class = "ui-li-aside">02-02-1999</span></p></li>		
+			<li><p><strong>Purchase Date:</strong><span class = "ui-li-aside">11-11-2004</span></p></li>		
+			<li><p><strong>Favorite Item:</strong><span class = "ui-li-aside">No</span></p></li>		
+			<li><p><strong>Backup Copy:</strong> <span class = "ui-li-aside">Yes</span></p></li>		
+			<li><p><strong>Notes:</strong><span class = "ui-li-aside">Stuff.</span></p></li>		
+		</ul>
+		</div>
+	
+		<!--Footer goes here-->	
+		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
+			<div data-role="navbar" id = "navbar">
+      	<ul>
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
+         </ul>
+      </div>
+		</footer>
+	</div>
+	
+	<!-- This is the "Windows 98 Cd" ------------------------------------------------------------------------------------------------------------------>
+	<div data-role = "page" id = "w9cp">
+			
+			<!-- Header goes here-->
+		<header data-role = "header" data-position = "fixed">
+			 			
+			<h1></h1>
+			<!-- Browsing feature goes here -->
+			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
+			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+		</header>
+		
+		<!-- Banner goes here -->		
+		<img src = "images/Untitled-2.png"/>
+		
+		<div data-role = "content">
+		<!-- Content goes here -->
+		<ul data-role = "listview" data-inset = "true">
+			<li data-role = "devider" data-theme = "b"><h2>Name: Windows 98 Cd</h2></li>
+			<li><img src = "images/DataCd.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Other</span></p></li>
+			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">Data Cd</span></p></li>		
+			<li><p><strong>Length:</strong><span class = "ui-li-aside"></span></p></li>		
+			<li><p><strong>Release Date:</strong><span class = "ui-li-aside">02-02-1999</span></p></li>		
+			<li><p><strong>Purchase Date:</strong><span class = "ui-li-aside">11-11-2004</span></p></li>		
+			<li><p><strong>Favorite Item:</strong><span class = "ui-li-aside">No</span></p></li>		
+			<li><p><strong>Backup Copy:</strong> <span class = "ui-li-aside">No</span></p></li>		
+			<li><p><strong>Notes:</strong><span class = "ui-li-aside">Install Disk.</span></p></li>		
+		</ul>
+		</div>
+	
+		<!--Footer goes here-->	
+		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
+			<div data-role="navbar" id = "navbar">
+      	<ul>
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
+         </ul>
+      </div>
+		</footer>
+	</div>
+	
+	<!--This is the JQuery Code file -->
+	<script type="text/javascript" src = "js/jqm.js"></script>
 </body>
 
 
