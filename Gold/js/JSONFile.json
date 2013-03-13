@@ -27,7 +27,7 @@
         "favOpt":		["Is it a favorite item ?", "Yes"],
         "bkCopy":		["Does the item have a back-up copy ?", "No"],
         "slideRange":	["Next Revision (in months): ", "3"],
-        "notes":			["Notes: ", "This is a Dvd."]
+        "notes":			["Notes: ", "This is a Video Dvd."]
     },
 
     {
@@ -36,13 +36,13 @@
         "dropMenu":		["Item Type: ", "AudioTape"],
         "nameItem":		["Name: ", "La-La Di"],
         "genreItem":		["Genre/Type: ", "Disco"],
-        "lengthItem":	["Length: ", "190"],
+        "lengthItem":	["Length: ", "60"],
         "pubDate":		["Release Date: ", "02-02-1999"],
         "purchaseDate":	["Purchase Date: ", "11-11-2004"],
         "favOpt":		["Is it a favorite item ?", "Yes"],
         "bkCopy":		["Does the item have a back-up copy ?", "No"],
         "slideRange":	["Next Revision (in months): ", "3"],
-        "notes":			["Notes: ", "This is a Dvd."]
+        "notes":			["Notes: ", "This is audio tape."]
     },
 
     {
@@ -50,14 +50,14 @@
         "cat": "other",
         "dropMenu":		["Item Type: ", "Other"],
         "nameItem":		["Name: ", "Car Documents"],
-        "genreItem":		["Genre/Type: ", "Action"],
+        "genreItem":		["Genre/Type: ", "PDF File"],
         "lengthItem":	["Length: ", "190"],
         "pubDate":		["Release Date: ", "02-02-1999"],
         "purchaseDate":	["Purchase Date: ", "11-11-2004"],
         "favOpt":		["Is it a favorite item ?", "Yes"],
-        "bkCopy":		["Does the item have a back-up copy ?", "No"],
+        "bkCopy":		["Does the item have a back-up copy ?", "Yes"],
         "slideRange":	["Next Revision (in months): ", "4"],
-        "notes":			["Notes: ", "This is a Dvd."]
+        "notes":			["Notes: ", "Stuff."]
     },
 
     {
@@ -66,13 +66,13 @@
         "dropMenu":		["Item Type: ", "VideoTape"],
         "nameItem":		["Name: ", "Fire Test"],
         "genreItem":		["Genre/Type: ", "Adventure"],
-        "lengthItem":	["Length: ", "190"],
+        "lengthItem":	["Length: ", "120"],
         "pubDate":		["Release Date: ", "02-02-1999"],
         "purchaseDate":	["Purchase Date: ", "11-11-2004"],
         "favOpt":		["Is it a favorite item ?", "Yes"],
         "bkCopy":		["Does the item have a back-up copy ?", "No"],
         "slideRange":	["Next Revision (in months): ", "4"],
-        "notes":			["Notes: ", "This is a Dvd."]
+        "notes":			["Notes: ", "This is a Video Tape."]
     },
     {
         "name": "item6",
@@ -93,7 +93,7 @@
         "name": "item7",
         "cat": "video",
         "dropMenu":     ["Item Type: ", "VideoDvd"],
-        "nameItem":     ["Name: ", "It was a time of Glory"],
+        "nameItem":     ["Name: ", "Times of Glory"],
         "genreItem":        ["Genre/Type: ", "Action"],
         "lengthItem":   ["Length: ", "190"],
         "pubDate":      ["Release Date: ", "02-02-1999"],

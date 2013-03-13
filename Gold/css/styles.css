@@ -36,10 +36,20 @@ span.ui-btn-text {
 .ui-li-count {
 	float: right;	
 }
-
 footer {
 	text-align: center;	
 }
+.hidden{
+display:none;
+}
+
+.show{
+display:block;
+}
+
+.listIcon{
+float:right;
+} 
 
 /*==============================additem.html Css goes here=============================*/
 #clearInput {
