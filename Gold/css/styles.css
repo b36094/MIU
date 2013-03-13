@@ -48,8 +48,11 @@ display:block;
 }
 
 .listIcon{
-float:right;
+float:left;
 } 
+.marginLeft {
+	margin-left:15px;	
+}
 
 /*==============================additem.html Css goes here=============================*/
 #clearInput {
