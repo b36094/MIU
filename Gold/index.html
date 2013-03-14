@@ -51,22 +51,22 @@
 		<div data-role = "content">	
 		
 	    	<ul data-role = "listview"  data-filter="true" data-inset = "true" data-corners = "false">
-				<li data-role="list-divider" data-link="audio"><span class = "marginLeft">Audio Entries</span><span class="ui-icon ui-icon-plus ui-icon-shadow listIcon"></span><span class="ui-li-count">4</span></li>
+				<li data-role="list-divider" data-link="audio"><span class = "marginLeft">Audio Entries</span><span class="ui-icon ui-icon-plus ui-icon-shadow listIcon"></span></li>
 				<li class="audio hidden"><a href="#lipp" data-transition = "slide"><img src = "images/smAudio.png" class="ui-li-icon ui-corner-none"/><span><p><strong>Love Is Perfect</strong></p></span><p class = "ui-li-aside">Audio Cd</p></a></li>
 				<li class="audio hidden"><a href="#lldp" data-transition = "slide"><img src = "images/smAudio.png" class="ui-li-icon ui-corner-none"/><span><p><strong>La-la Di</strong></p></span><p class = "ui-li-aside">Audio Tape</p></a></li>
 				<li class="audio hidden"><a href="#ltsp" data-transition = "slide"><img src = "images/smAudio.png" class="ui-li-icon ui-corner-none"/><span><p><strong>'Lot to Say</strong></p></span><p class = "ui-li-aside">Audio Cd</p></a></li>
 				<li class="audio hidden"><a href="#fthp" data-transition = "slide"><img src = "images/smAudio.png" class="ui-li-icon ui-corner-none"/><span><p><strong>From the Heart</strong></p></span><p class = "ui-li-aside">Audio Cd</p></a></li>
 				
-				<li data-role="list-divider" data-link="video"><span class = "marginLeft">Video Entries</span><span class="ui-icon ui-icon-plus ui-icon-shadow listIcon"></span><span class="ui-li-count">3</span></li>
+				<li data-role="list-divider" data-link="video"><span class = "marginLeft">Video Entries</span><span class="ui-icon ui-icon-plus ui-icon-shadow listIcon"></span></li>
 				<li class="video hidden"><a href="#smnp" data-transition = "slide"><img src = "images/smVideo.png" class="ui-li-icon ui-corner-none"/><span><p><strong>Shoot Me Now</strong></p></span><p class = "ui-li-aside">Video Dvd</p></a></li>
 				<li class="video hidden"><a href="#ftp" data-transition = "slide"><img src = "images/smVideo.png" class="ui-li-icon ui-corner-none"/><span><p><strong>Fire Test</strong></p></span><p class = "ui-li-aside">Video Tape</p></a></li>
 				<li class="video hidden"><a href="#togp" data-transition = "slide"><img src = "images/smVideo.png" class="ui-li-icon ui-corner-none"/><span><p><strong>Times of Glory</strong></p></span><p class = "ui-li-aside">Video Dvd</p></a></li>
 				
-				<li data-role="list-divider" data-link="book"><span class = "marginLeft">Book Entries</span><span class="ui-icon ui-icon-plus ui-icon-shadow listIcon"></span><span class="ui-li-count">2</span></li>
+				<li data-role="list-divider" data-link="book"><span class = "marginLeft">Book Entries</span><span class="ui-icon ui-icon-plus ui-icon-shadow listIcon"></span></li>
 				<li class="book hidden"><a href="#dip" data-transition = "slide"><img src = "images/smBook.png" class="ui-li-icon ui-corner-none"/><span><p><strong>Designing Interfaces</strong></p></span><p class = "ui-li-aside">Reference</p></a></li>
 				<li class="book hidden"><a href="#lhotpp" data-transition = "slide"><img src = "images/smBook.png" class="ui-li-icon ui-corner-none"/><span><p><strong>Little House on the Prairie</strong></p></span><p class = "ui-li-aside">Literature</p></a></li>
 				
-				<li data-role="list-divider" data-link="other"><span class = "marginLeft">Other Entries</span><span class="ui-icon ui-icon-plus ui-icon-shadow listIcon"></span><span class="ui-li-count">2</span></li>
+				<li data-role="list-divider" data-link="other"><span class = "marginLeft">Other Entries</span><span class="ui-icon ui-icon-plus ui-icon-shadow listIcon"></span></li>
 				<li class="other hidden"><a href="#smnp" data-transition = "slide"><img src = "images/smVideo.png" class="ui-li-icon ui-corner-none"/><span><p><strong>Car Documents</strong></p></span><p class = "ui-li-aside">Other</p></a></li>
 				<li class="other hidden"><a href="#ftp" data-transition = "slide"><img src = "images/smVideo.png" class="ui-li-icon ui-corner-none"/><span><p><strong>Windows 98 Cd</strong></p></span><p class = "ui-li-aside">Other</p></a></li>
 
@@ -108,7 +108,8 @@
 		
 		<div data-role = "content">
 			<h1>About Page: </h1>
-			<p>This is a Home Media Library application designed for domestic use.</p>		
+			<p>This is a Home Media Library application designed to keep track of a wide variety of items.</p>
+			<a data-role = "button" href = "https://github.com/b36094/MIU" rel = "external">GitHub Link</a>	
 		</div>
 		
 		
@@ -143,8 +144,8 @@
 		<div data-role = "content">
 			<ul data-role="listview" data-inset="true">
     			<li data-role="list-divider">:: Next Revision ::</li>
-	    		<li>
-	    			<a href="index.html">
+	    		<li data-transition = "slide">
+	    			<a href="#cdp">
 						<img src = "images/Other.png"></img>	        			
 	        			<p><strong>Car Documents</strong></p>
 	        			<p>Type: Other</p>
@@ -152,17 +153,17 @@
 	    			</a>
 	    		</li>
 	    		
-	    		<li>
-	    			<a href="index.html">
+	    		<li data-transition = "slide">
+	    			<a href="#togp">
 						<img src = "images/VideoDvd.png"></img>	        			
-	        			<p><strong>Elimination</strong></p>
+	        			<p><strong>Times of Glory</strong></p>
 	        			<p>Type: Video Dvd</p>
 	        			<p class="ui-li-aside"><strong>2 Months</strong></p>
 	    			</a>
 	    		</li>
 	    		
-	    		<li>
-	    			<a href="index.html">
+	    		<li data-transition = "slide">
+	    			<a href="#lldp">
 						<img src = "images/AudioTape.png"></img>	        			
 	        			<p><strong>La-la Di</strong></p>
 	        			<p>Type: AudioTape</p>
@@ -170,8 +171,8 @@
 	    			</a>
 	    		</li>
 	    		
-	    		<li>
-	    			<a href="index.html">
+	    		<li data-transition = "slide">
+	    			<a href="#smnp">
 	    				<img src = "images/VideoDvd.png"></img>
 	        			<p><strong>Shoot Me Now</strong></p>
 	        			<p>Type: Video Dvd</p>
@@ -179,8 +180,8 @@
 	    			</a>
 	    		</li>
 	    		
-	    		<li>
-	    			<a href="index.html">
+	    		<li data-transition = "slide">
+	    			<a href="#lipp">
 	    				<img src = "images/AudioCd.png"></img>
 	        			<p><strong>Love Is Perfect</strong></p>
 	        			<p>Type: Audio Cd</p>

@@ -1,4 +1,4 @@
-// Concept implemented by the JQuery Mobile Dev. team <--> Experimental phase. 
+// Concept implemented by the JQuery Mobile Dev. Team <--> Experimental phase. 
 // Refactoring for this project by: Andrei B.
 
 $(function(){
