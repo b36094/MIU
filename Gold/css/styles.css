@@ -48,8 +48,14 @@ display:block;
 }
 
 .listIcon{
-float:right;
+float:left;
 } 
+.marginLeft {
+	margin-left:15px;	
+}
+#moreInfo h1 {
+	color:#3C5B8C;	
+}
 
 /*==============================additem.html Css goes here=============================*/
 #clearInput {
