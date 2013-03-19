@@ -58,64 +58,10 @@ float:left;
 }
 
 /*==============================additem.html Css goes here=============================*/
-#clearInput {
-	position:relative;
-}
-#displayData {
-	float:right;
-}
-#addNewEntry {
-	float:right;
-	display:none;	
-}
-legend {
-	font-style:italic;
-}
-li {
-	list-style-type: none;
-}
-#mediaTypeId {
-	margin-left: 40px;
-	font-weight:bold;
-}
-#mediaType {
-	margin-left: 45px;
-	margin-bottom:10px;	
-}
-#nameItem {
-	display:block;
-	margin-bottom:15px;
-}
-#genreItem {
-	display:block;
-	margin-bottom:15px;
-}
-#pubDate {
-	display:block;
-	margin-bottom:15px;	
-}	
-#lengthItem {
-	display:block;
-	margin-bottom:15px;	
-}
-#purchaseDate {
-	display:block;
-	margin-bottom:15px;	
-}
-#favCheckLabel {
-	margin-left:40px;
-}
-#slider {
-	margin-left: 15px;
-	margin-top:15px;
-	margin-bottom:25px;	
-}
-#notes {
-	display:block;	
-}
 #submitButton {
-	margin-top: 15px;	
+	color: green;
 }
-#slider {
-	width:45px;
+.hintText {
+	font-size:0.5em;	
 }
+
