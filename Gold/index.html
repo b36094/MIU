@@ -686,11 +686,13 @@
 		<img src = "images/Untitled-2.png"/>
 		
 		<div data-role = "content">
+		
 		<!-- Content goes here -->
 			<form action = "" method = "post" id = "firstForm">
 				<div data-role = "fieldcontain">
 					<label for = "mediaChoice"><strong>*</strong>&nbsp;Choose Media Type:</label>
-					<select name = "mediaChoice" id = "mediaChoice" data-native-menu = "false"/>
+					<select name = "mediaChoice" id = "mediaChoice" data-native-menu = "true"/>
+						<option data-placeholder = "true">Media Type</option>						
 						<optgroup label = "Audio">
 							<option value = "AudioCd">AudioCd</option>				
 							<option value = "AudioTape">AudioTape</option>				
@@ -710,26 +712,31 @@
 							<option value = "eBook">eBook</option>				
 							<option value = "eDocument">eDocument</option>				
 						</optgroup>
-					</select>		
+					</select>
+					<p class = "hintText">Select a category for your entry.</p>		
 				</div>
 				
 											
 				<!--Input Fields Start Here -->
 				<div data-role = "fieldcontain">					
 					<label for = "nameItem"><strong>*</strong>&nbsp;Name:</label>
-					<input type = "text" name = "nameItem" id = "nameItem" placeholder = "Total Recall"/>
+					<input type = "text" name = "nameItem" id = "nameItem"/>
+					<p class = "hintText">Example: "Car"</p>
 				</div>
 				<div data-role = "fieldcontain">
 					<label for = "genreItem"><strong>*</strong>&nbsp;Genre/Type:</label>
-					<input type = "text" name = "genreItem" id = "genreItem" placeholder = "Comedy"/>
+					<input type = "text" name = "genreItem" id = "genreItem"/>
+					<p class = "hintText">Example: "Sedan"</p>
 				</div>	
 				<div data-role = "fieldcontain">
 					<label for = "lengthItem">Length (minutes):</label>
-					<input type = "text" name = "lengthItem" id = "lengthItem" placeholder = "120"/>
+					<input type = "text" name = "lengthItem" id = "lengthItem"/>
+					<p class = "hintText">Example: "120". Use only if applicable.</p>
 				</div>	
 				<div data-role = "fieldcontain">
-					<label for = "pubDate">Release Date:</label>
-					<input type = "date" name = "pubDate" id = "pubDate"/>
+					<label for = "pubDate">Release<small>&nbsp;-or-&nbsp;</small>Manufacture Date:</label>
+					<input type = "date" name = "pubDate" id = "pubDate" default = "01-01-2001"/>
+					<p class = "hintText">The date when the item was released or manufactured.</p>
 				</div>
 				<div data-role = "fieldcontain">
 					<label for = "datePurchase">Purchase Date:</label>
@@ -758,8 +765,9 @@
 									
 				<fieldset class="ui-grid-a">
     				<div class="ui-block-a"><button type="submit" id = "submitButton" value = "Add Entry" data-theme="b">Submit</button></div>
-    				<div class="ui-block-b"><button type="reset" id = "resetButton" value = "Reset Form" data-theme="a">Reset</button></div>
-				</fieldset>
+    				<div class="ui-block-b"><button type="reset" id = "resetButton" value = "Reset" data-theme="a">Reset</button></div>
+    				
+    			</fieldset>
 				
 			</form>
 		</div>
