@@ -68,3 +68,7 @@ float:left;
 	text-align: center;	
 	
 }
+label.error {
+	color:red;
+	display: block;	
+}
