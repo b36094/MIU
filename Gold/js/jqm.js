@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(objPage){
 	//The functions below can go inside or outside the pageinit function for the page in which it is needed.
 	
 	//code needed for home page goes here
@@ -60,24 +60,25 @@ $(document).ready(function(){
 	//Call getData to display the local storage	
 	getData();
 	
+			
 }); //here ends $(document).ready();
 	
 
 //getData function starts here	
 var getData = function (obj) {
-	
+
 	for(var i = 0, j = localStorage.length; i < j; i ++) {
 		var newKey = localStorage.key(i);
 		var newValue = localStorage.getItem(newKey);	
 		var newObj = JSON.parse(newValue);
 		var ulListView = $('#container').append('<ul data-role="listview" data-split-icon="minus" data-split-theme="c" data-inset="true" id="ulOrigin'+i+'"></ul>');
 		var insideLi = $('#ulOrigin'+i).append('<li><a href="#"><img src="images/'+newObj[0].value+'.png"><h2>'+newObj[1].value+'</h2><p>'+newObj[0].value+'</p></a><a href = "#deleteObject" data-rel = "popup" data-position-to = "window" data-transition = "pop">Delete Entry</a></li>');		
-		
-				
-			
+
+
+
 	}
-	
-	
+
+
 };			
 
 
@@ -90,8 +91,5 @@ var genRandomId = function(){
 	return randomId;
 };
 
-
-
-
-    		
+   		
 
