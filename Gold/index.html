@@ -40,10 +40,8 @@
 			<!--Add New Entry goes here -->
 			<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
 		</header>
-		
 		<!-- Banner goes here -->		
 		<img src = "images/Untitled-2.png"/>
-		
 		<!--Devider Goes Here -->		
 		<ul data-role = "listview">
 			<li data-role = "devider" data-theme = "b"><h4>Browse by category:</h4></li>
@@ -86,7 +84,7 @@
          	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
             <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
          </ul>
-      </div>
+      	</div>
 		</footer>
 		
 		
@@ -684,17 +682,21 @@
 		
 		<!-- Banner goes here -->		
 		<img src = "images/Untitled-2.png"/>
-		
+		<div data-role="navbar" id = "navbar" >
+      	<ul>
+				<button id = "displayDataButton" value = "Display Stored Data" data-theme="b" data-icon="check"></button>        	
+         	
+         </ul>
+      </div>
 		<div data-role = "content">
 		
 		<!-- Content goes here -->
 			<form action = "" method = "post" id = "firstForm">
 				<div data-role = "fieldcontain">
-					<label for = "mediaChoice"><strong>*</strong>&nbsp;Choose Media Type:</label>
+					<label for = "mediaChoice"><strong>*</strong>&nbsp;Choose Media Class:</label>
 					<select name = "mediaChoice" id = "mediaChoice" data-native-menu = "true"/>
-						<option data-placeholder = "true">Media Type</option>						
 						<optgroup label = "Audio">
-							<option value = "AudioCd">AudioCd</option>				
+							<option value = "AudioCd" selected = "selected">AudioCd</option>				
 							<option value = "AudioTape">AudioTape</option>				
 							<option value = "AudioRecord">AudioRecord</option>		
 						</optgroup>		
@@ -709,8 +711,8 @@
 							<option value = "MemoryStick">MemoryStick</option>		
 						</optgroup>
 						<optgroup label = "Other">
-							<option value = "eBook">eBook</option>				
-							<option value = "eDocument">eDocument</option>				
+							<option value = "Book">eBook</option>				
+							<option value = "Document">eDocument</option>				
 						</optgroup>
 					</select>
 					<p class = "hintText">Select a category for your entry.</p>		
@@ -729,7 +731,7 @@
 					<p class = "hintText">Example: "Sedan"</p>
 				</div>	
 				<div data-role = "fieldcontain">
-					<label for = "lengthItem">Length (minutes):</label>
+					<label for = "lengthItem">Length:</label>
 					<input type = "text" name = "lengthItem" id = "lengthItem" class = "number"/>
 					<p class = "hintText">Example: "120". Use only if applicable.</p>
 				</div>	
@@ -762,12 +764,12 @@
 					<textarea id = "notes" name = "notesLabel"></textarea>
 				</div>
 					
-									
-				<fieldset class="ui-grid-a">
-    				<div class="ui-block-a"><button data-theme="b" type="submit" id = "submitButton">Submit</a></button></div>
-    				<div class="ui-block-b"><button data-theme="a" type="reset" id = "resetButton" >Reset</button></div>
-    				
-    			</fieldset>
+				<div data-role = "fieldcontain">					
+					<fieldset class = "ui-block-a">
+						<div class="ui-block-b"><button type="submit" data-theme="b">Submit</button></div>	    				
+	    				<div class="ui-block-a"><button type="reset" data-theme="c">Cancel</button></div>
+					</fieldset>
+	    		</div>
 				
 			</form>
 		</div>
@@ -784,22 +786,48 @@
 	</div>
 	
 	<!-- This is the "Display Info" page -------------------------------------------------------------------------------------------------------->
-	<div data-role = "page" id = "displayInfo">
+	<div data-role = "page" id = "displayData">
+	
+		<div data-role = "header">
+	
+			<header data-role = "header">
+				 			
+				<h1></h1>
+				<!-- Browsing feature goes here -->
+				<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left" id = "displayDataButton">Back</a>
+				<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
+			</header>
+			
+			<!-- Banner goes here -->		
+			<img src = "images/Untitled-2.png"/>	
+			
+		</div>
+		<div data-role="navbar" id = "navbar" >
+      	<ul>
+				<button id = "clearLocal" value = "Clear local-storage" data-theme="b" data-icon="gear"></button>        	
+         	
+         </ul>
+     		</div>
+		<div data-role = "content" id = "container">
+			
+		</div>
+	
+		<!--Footer goes here-->	
+		<footer data-role = "footer" data-theme = "a" data-id = "ftbottom" data-position = "fixed">
+			<div data-role="navbar" id = "navbar">
+      	<ul>
+				<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>         	
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
+         </ul>
+      </div>
+		</footer>
 		
-		<!-- Header goes here-->
-		<header data-role = "header" data-position = "fixed">
-			 			
-			<h1></h1>
-			<!-- Browsing feature goes here -->
-			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
-			<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
-		</header>
-		
-		<!-- Banner goes here -->		
-		<img src = "images/Untitled-2.png"/>
-		
-		<div data-role = "content">
-					
+		<div data-role="popup" id="deleteObject" data-theme="d" data-overlay-theme="b" class="ui-content" style="max-width:200px; padding-bottom:2em;">
+    		<h3>Delete Entry?</h3>
+    		<p>The entry will be lost.</p>
+    		<a href="#" data-role="button" data-rel="back" data-theme="b" data-icon="check" data-inline="true" data-mini="true" id = "deleteButton">Delete</a>
+    		<a href="#" data-role="button" data-rel="back" data-inline="true" data-mini="true">Cancel</a>
 		</div>
 	
 	</div>	
