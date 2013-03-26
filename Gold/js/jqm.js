@@ -66,9 +66,7 @@ $(document).ready(function(){
 	//Call saveData function to display the local storage	
 	outputData();
 	
-	//Call deleteItem function
-	deleteItem();
-			
+				
 }); //here ends $(document).ready();
 	
 
