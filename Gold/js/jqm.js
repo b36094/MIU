@@ -75,7 +75,7 @@ $(document).ready(function(){
 
 
 
-//saveData function starts here	
+//outputData function starts here	
 var outputData = function () {
 	
 	for(var i = 0, j = localStorage.length; i < j; i ++) {
@@ -98,54 +98,12 @@ var outputData = function () {
 		//complete the list by adding the <li> element inside of the <ul>
 		var insideLi = $('#ulOrigin'+parsedObj.id).append('<li><a href="#li'+parsedObj.id+'"><img src="images/'+parsedObj[0].value+'.png"><h2>'+parsedObj[1].value+'</h2><p>'+parsedObj[0].value+'</p></a><a href = "#deleteObject" data-rel = "popup" data-position-to = "window" data-transition = "pop">Delete Entry</a></li>');	
 		
-		//var newValue = localStorage.getItem(newKey);	
-		//var newObj = JSON.parse(newValue);
-		//var $dynPage = ('<div data-role = "page" id = "dynPage'+i+'"><div data-role = "content"></div></div>');
-		//$(document.body).append($dynPage);
-		//var ulListView = $('#container').append('<ul data-role="listview" data-split-icon="minus" data-split-theme="c" data-inset="true" id="ulOrigin'+i+'"></ul>');
-		//var insideLi = $('#ulOrigin'+i).append('<li><a href="#dynPage'+i+'"><img src="images/'+newObj[0].value+'.png"><h2>'+newObj[1].value+'</h2><p>'+newObj[0].value+'</p></a><a href = "#deleteObject" data-rel = "popup" data-position-to = "window" data-transition = "pop">Delete Entry</a></li>');		
-		
-		
-		
+		//keep here for reference
+		//window.location.reload('#addItem');
+			
 	}
-	
-		
-			
-		//var dynPage = ('<div data-role = "page" id = "dynPage'+parsedObj.id+'"><div data-role = "content"></div></div>');
-		//$(document.body).append(dynPage);
-			
 };
 	
-	
-			
-
-//saveData function 
-var saveData = function () {
-		
-			//var randomId = genRandomId();
-			//data.randomNum = randomId;			
-			//var jsonObj = JSON.stringify(data);
-			//localStorage.setItem(randomId,jsonObj);		
-			//$($myFirstForm)[0].reset();
-			//console.log(localStorage);
-			//var prsJSONObj = JSON.parse(jsonObj);
-			//console.log(prsJSONObj);
-			window.location.reload('#addItem');
-};
-//delete item
-var deleteItem = function (newKey) {
-		$('#deleteButton').click(function(){
-					alert("boo!");
-					
-					window.location.reload();
-		});
-		
-};
-
-var autofillData = function (){
-	 
-};
-
 //genRandomId function creates a random number and returns the number 
 var genRandomId = function(){
 	var randomId = Math.floor(Math.random() * 10000001);
