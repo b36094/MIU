@@ -766,7 +766,7 @@
 					
 				<div data-role = "fieldcontain">					
 					<fieldset class = "ui-block-a">
-						<div class="ui-block-b"><button type="submit" data-theme="b">Submit</button></div>	    				
+						<div class="ui-block-b"><button type="submit" data-theme="b" id = "submitButton">Submit</button></div>	    				
 	    				<div class="ui-block-a"><button type="reset" data-theme="c">Cancel</button></div>
 					</fieldset>
 	    		</div>
@@ -828,6 +828,12 @@
     		<p>The entry will be lost.</p>
     		<a href="#" data-role="button" data-rel="back" data-theme="b" data-icon="check" data-inline="true" data-mini="true" id = "deleteButton">Delete</a>
     		<a href="#" data-role="button" data-rel="back" data-inline="true" data-mini="true">Cancel</a>
+		</div>
+		
+		<div data-role="popup" id="saveConfirm" data-theme="d" data-overlay-theme="b" class="ui-content" style="max-width:200px; padding-bottom:2em;">
+    		<h3>Data Saved</h3>
+    		<p>Data saved into local-storage...</p>
+    		<a href="#displayData" data-role="button" data-rel="back" data-theme="b" data-icon="check" data-inline="true" data-mini="true" id = "deleteButton">Ok</a>
 		</div>
 	
 	</div>	
