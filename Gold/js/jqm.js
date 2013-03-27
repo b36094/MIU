@@ -105,7 +105,8 @@ var outputData = function () {
 		
 		//complete the list by adding the <li> element inside of the <ul>
 		var insideLi = $('#ulOrigin'+parsedObj.id).append('<li><a href="#li'+parsedObj.id+'"><img src="images/'+parsedObj[0].value+'.png"><h2>'+parsedObj[1].value+'</h2><p>'+parsedObj[0].value+'</p></a><a href = "#deleteObject" data-rel = "popup" data-position-to = "window" data-transition = "pop">Delete Entry</a></li>');	
-		$('#ulOrigin'+parsedObj.id).listview().listview('refresh');
+
+		insideLi.listview().listview('refresh');
 		
 		
 		//keep here for reference
