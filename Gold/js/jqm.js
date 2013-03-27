@@ -1,5 +1,4 @@
-$(document).ready(function(){
-	
+$(document).on('pageinit', '#mainPage', function(){
 	// Concept implemented by the JQuery Mobile Dev. Team <--> Experimental phase. 
 	// Refactoring for this project by: Andrei B.	
 	$(function(){
@@ -13,8 +12,9 @@ $(document).ready(function(){
 			$(this).children().removeClass('ui-icon-minus').addClass('ui-icon-plus');
 	 	});	
 	});
+}); //here ends $(document).ready();	
 	
-	
+$(document).on('pageinit', '#addItem', function(){	
 	//function to parse the form
 	var $myFirstForm = $('#firstForm');
 	
@@ -55,6 +55,10 @@ $(document).ready(function(){
 		//refreshes displayData
 		window.location.reload('#displayData');
 	});
+}); //here ends $(document).ready();
+	
+	
+$(document).on('pageinit', '#displayData', function(){
 	
 	//Clear local storage
 	$('#clearLocal').click(function(){
@@ -66,7 +70,13 @@ $(document).ready(function(){
 	//Call saveData function to display the local storage	
 	outputData();
 	
-				
+	//Check all the <ul> tags in the '#container' and choose the one that's being clicked on
+	$('#container ul').click(function(){
+		
+		alert("Entry ID: "+this.id);
+		
+		
+	});			
 }); //here ends $(document).ready();
 	
 
@@ -95,11 +105,15 @@ var outputData = function () {
 		
 		//complete the list by adding the <li> element inside of the <ul>
 		var insideLi = $('#ulOrigin'+parsedObj.id).append('<li><a href="#li'+parsedObj.id+'"><img src="images/'+parsedObj[0].value+'.png"><h2>'+parsedObj[1].value+'</h2><p>'+parsedObj[0].value+'</p></a><a href = "#deleteObject" data-rel = "popup" data-position-to = "window" data-transition = "pop">Delete Entry</a></li>');	
+		$('#ulOrigin'+parsedObj.id).listview().listview('refresh');
+		
 		
 		//keep here for reference
 		//window.location.reload('#addItem');
-			
+		console.log(parsedObj);	
 	}
+	
+		
 };
 	
 //genRandomId function creates a random number and returns the number 
@@ -108,5 +122,13 @@ var genRandomId = function(){
 	return randomId;
 };
 
-   		
+
+//targetObj function 
+
+var targetObj = function (id) {
+	
+	$(id).click(function(){
+		alert(id);
+	});
+};	
 
