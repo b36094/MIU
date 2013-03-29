@@ -20,13 +20,16 @@
 	<title>Home Media Library</title>
 	
 	<!-- jQuery Mobile -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
-	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
-	<!--This is the JQuery Code file -->
-	<script type="text/javascript" src = "js/jqm.js"></script>
-	<!-- CSS Local -->
+	<link rel="stylesheet" href="themes/miuCustom.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+	<script type = "text/javascript" src = "js/jquery.validate.min.js"></script>
+	<script type = "text/javascript" src = "js/jqm.js"></script>
+	
+	<!-- CSS Local -->
+	
 	
 	
 </head>
@@ -35,29 +38,41 @@
 	<!-- This is the Main Page ------------------------------------------------------------------------------------------------------------------>	
 	<div data-role = "page" id = "mainPage">
 		<!-- Header goes here-->
-		<header data-role = "header" data-position = "fixed" data-theme = "e">
+		<header data-role = "header" data-position = "fixed">
 			<h1></h1>
 			<!--Add New Entry goes here -->
-			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+			<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
 		</header>
-		
 		<!-- Banner goes here -->		
 		<img src = "images/Untitled-2.png"/>
-		
 		<!--Devider Goes Here -->		
 		<ul data-role = "listview">
-			<li data-role = "devider" data-theme = "e"><h4>Browse by category:</h4></li>
+			<li data-role = "devider" data-theme = "a"><h4>Browse by category:</h4></li>
 		</ul>	
-		<div data-role = "content" data-theme = "e">	
-		   <ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="false">
-			    <li><a href="#lipp"><img src = "images/AudioCd.png"/>Love Is Perfect</a></li>
-			    <li><a href="#lldp"><img src = "images/AudioTape.png"/>La-la Di</a></li>
-			    <li><a href="#ltsp"><img src = "images/AudioCd.png"/>Lot to Say</a></li>
-			    <li><a href="#fthp"><img src = "images/AudioCd.png"/>From the Heart</a></li>
-			    <li><a href="#cdp"><img src = "images/Other.png"/>Car Documents</a></li>
-			    <li><a href="#lhotpp"><img src = "images/Book.png"/>Little House on the Prairie</a></li>
-			    <li><a href="#togp"><img src = "images/VideoDvd.png"/>Times of Glory</a></li>
+		<div data-role = "content">	
+		
+	    	<ul data-role = "listview"  data-filter="true" data-inset = "true" data-corners = "false">
+				<li data-role="list-divider" data-link="audio"><span class = "marginLeft">Audio Entries</span><span class="ui-icon ui-icon-plus ui-icon-shadow listIcon"></span></li>
+				<li class="audio hidden"><a href="#lipp" data-transition = "slide"><img src = "images/smAudio.png" class="ui-li-icon ui-corner-none"/><span><p><strong>Love Is Perfect</strong></p></span><p class = "ui-li-aside">Audio Cd</p></a></li>
+				<li class="audio hidden"><a href="#lldp" data-transition = "slide"><img src = "images/smAudio.png" class="ui-li-icon ui-corner-none"/><span><p><strong>La-la Di</strong></p></span><p class = "ui-li-aside">Audio Tape</p></a></li>
+				<li class="audio hidden"><a href="#ltsp" data-transition = "slide"><img src = "images/smAudio.png" class="ui-li-icon ui-corner-none"/><span><p><strong>'Lot to Say</strong></p></span><p class = "ui-li-aside">Audio Cd</p></a></li>
+				<li class="audio hidden"><a href="#fthp" data-transition = "slide"><img src = "images/smAudio.png" class="ui-li-icon ui-corner-none"/><span><p><strong>From the Heart</strong></p></span><p class = "ui-li-aside">Audio Cd</p></a></li>
+				
+				<li data-role="list-divider" data-link="video"><span class = "marginLeft">Video Entries</span><span class="ui-icon ui-icon-plus ui-icon-shadow listIcon"></span></li>
+				<li class="video hidden"><a href="#smnp" data-transition = "slide"><img src = "images/smVideo.png" class="ui-li-icon ui-corner-none"/><span><p><strong>Shoot Me Now</strong></p></span><p class = "ui-li-aside">Video Dvd</p></a></li>
+				<li class="video hidden"><a href="#ftp" data-transition = "slide"><img src = "images/smVideo.png" class="ui-li-icon ui-corner-none"/><span><p><strong>Fire Test</strong></p></span><p class = "ui-li-aside">Video Tape</p></a></li>
+				<li class="video hidden"><a href="#togp" data-transition = "slide"><img src = "images/smVideo.png" class="ui-li-icon ui-corner-none"/><span><p><strong>Times of Glory</strong></p></span><p class = "ui-li-aside">Video Dvd</p></a></li>
+				
+				<li data-role="list-divider" data-link="book"><span class = "marginLeft">Book Entries</span><span class="ui-icon ui-icon-plus ui-icon-shadow listIcon"></span></li>
+				<li class="book hidden"><a href="#dip" data-transition = "slide"><img src = "images/smBook.png" class="ui-li-icon ui-corner-none"/><span><p><strong>Designing Interfaces</strong></p></span><p class = "ui-li-aside">Reference</p></a></li>
+				<li class="book hidden"><a href="#lhotpp" data-transition = "slide"><img src = "images/smBook.png" class="ui-li-icon ui-corner-none"/><span><p><strong>Little House on the Prairie</strong></p></span><p class = "ui-li-aside">Literature</p></a></li>
+				
+				<li data-role="list-divider" data-link="other"><span class = "marginLeft">Other Entries</span><span class="ui-icon ui-icon-plus ui-icon-shadow listIcon"></span></li>
+				<li class="other hidden"><a href="#smnp" data-transition = "slide"><img src = "images/smVideo.png" class="ui-li-icon ui-corner-none"/><span><p><strong>Car Documents</strong></p></span><p class = "ui-li-aside">Other</p></a></li>
+				<li class="other hidden"><a href="#ftp" data-transition = "slide"><img src = "images/smVideo.png" class="ui-li-icon ui-corner-none"/><span><p><strong>Windows 98 Cd</strong></p></span><p class = "ui-li-aside">Other</p></a></li>
+
 			</ul>
+		 
 		</div>
 		
 		
@@ -65,14 +80,14 @@
 				
 		
 		<!--Footer goes here-->	
-		<footer data-role = "footer" data-theme = "e" data-position = "fixed" data-id = "ftbottom">
+		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
 			<div data-role="navbar" id = "navbar">
       	<ul>
-         	<li><a href="#moreInfo" data-icon="info" data-theme = "e">Info</a></li>
-            <li><a href="#mainPage" data-icon="home" class="ui-btn-active" data-theme = "e">Home</a></li>
-            <li><a href="#newsStream" data-icon="gear" data-theme = "e">News Stream</a></li>
+				<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>         	
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
          </ul>
-      </div>
+      	</div>
 		</footer>
 		
 		
@@ -86,7 +101,7 @@
 			<h1></h1>
 			<!-- Browsing feature goes here -->
 			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
-			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+			<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
 		</header>
 		
 		<!-- Banner goes here -->		
@@ -98,7 +113,6 @@
 			<a data-role = "button" href = "https://github.com/b36094/MIU" rel = "external">GitHub Link</a>	
 			<a data-role = "button" href = "http://b36094.github.com/MIU/Gold/" rel = "external">Gh Gold Version</a>	
 			<a data-role = "button" href = "http://b36094.github.com/MIU/Bronze/" rel = "external">Gh Bronze Version</a>	
-				
 		</div>
 		
 		
@@ -106,8 +120,8 @@
 		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
 			<div data-role="navbar" id = "navbar">
       		<ul>
+					<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>         		
          		<li><a href="#moreInfo" data-icon="info" data-theme = "a" class = "ui-btn-active">Info</a></li>
-            	<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
             	<li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
          	</ul>
       	</div>
@@ -124,33 +138,70 @@
 			<h1></h1>
 			<!-- Browsing feature goes here -->
 			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
-			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+			<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
 		</header>
 		
 		<!-- Banner goes here -->		
 		<img src = "images/Untitled-2.png"/>
 		
-		<div data-role = "content" data-theme = "e">
-			
-    		
-    		<div class="ui-grid-a" data-theme = "b">
-				<div class="ui-block-a" class = "marginLeft"><a href = "#lipp"><img src = "images/AudioCd.png"/><p><strong>Love is Perfect</strong></p><p>1 Month</p></a></div>
-				<div class="ui-block-b" class = "marginLeft"><a href = "#lldp"><img src = "images/AudioTape.png"/><p><strong>La-la Di</strong></p><p>2 Months</p></a></div>
-				<div class="ui-block-a" class = "marginLeft"><a href = "#ltsp"><img src = "images/AudioCd.png"/><p><strong>'Lot to Say</strong></p><p>3 Months</p></a></div>
-				<div class="ui-block-b" class = "marginLeft"><a href = "#fthp"><img src = "images/AudioCd.png"/><p><strong>From the Heart</strong></p><p>4 Months</p></a></div>
-				<div class="ui-block-a" class = "marginLeft"><a href = "#togp"><img src = "images/Book.png"/><p><strong>Designing Interfaces</strong></p><p>5 Month</p></a></div>
-				
-			</div><!-- /grid-a -->
+		<div data-role = "content">
+			<ul data-role="listview" data-inset="true">
+    			<li data-role="list-divider">:: Next Revision ::</li>
+	    		<li data-transition = "slide">
+	    			<a href="#cdp">
+						<img src = "images/Other.png"></img>	        			
+	        			<p><strong>Car Documents</strong></p>
+	        			<p>Type: Other</p>
+	        			<p class="ui-li-aside"><strong>1 Months</strong></p>
+	    			</a>
+	    		</li>
+	    		
+	    		<li data-transition = "slide">
+	    			<a href="#togp">
+						<img src = "images/VideoDvd.png"></img>	        			
+	        			<p><strong>Times of Glory</strong></p>
+	        			<p>Type: Video Dvd</p>
+	        			<p class="ui-li-aside"><strong>2 Months</strong></p>
+	    			</a>
+	    		</li>
+	    		
+	    		<li data-transition = "slide">
+	    			<a href="#lldp">
+						<img src = "images/AudioTape.png"></img>	        			
+	        			<p><strong>La-la Di</strong></p>
+	        			<p>Type: AudioTape</p>
+	        			<p class="ui-li-aside"><strong>3 Months</strong></p>
+	    			</a>
+	    		</li>
+	    		
+	    		<li data-transition = "slide">
+	    			<a href="#smnp">
+	    				<img src = "images/VideoDvd.png"></img>
+	        			<p><strong>Shoot Me Now</strong></p>
+	        			<p>Type: Video Dvd</p>
+	        			<p class="ui-li-aside"><strong>4 Months</strong></p>
+	    			</a>
+	    		</li>
+	    		
+	    		<li data-transition = "slide">
+	    			<a href="#lipp">
+	    				<img src = "images/AudioCd.png"></img>
+	        			<p><strong>Love Is Perfect</strong></p>
+	        			<p>Type: Audio Cd</p>
+	        			<p class="ui-li-aside"><strong>5 Months</strong></p>
+	    			</a>
+	    		</li>
+    		</ul>		
 		</div>
 		
 		
 		<!--Footer goes here-->	
 		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
-			<div data-role="navbar" id = "navbar" data-theme = "e">
+			<div data-role="navbar" id = "navbar">
       	<ul>
-         	<li><a href="#moreInfo" data-icon="info" data-theme = "e">Info</a></li>
-            <li><a href="#mainPage" data-icon="home" data-theme = "e">Home</a></li>
-            <li><a href="#newsStream" data-icon="gear" data-theme = "e" class = "ui-btn-active">News Stream</a></li>
+				<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>         	
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a" class = "ui-btn-active">News Stream</a></li>
          </ul>
       </div>
 		</footer>
@@ -166,7 +217,7 @@
 			<h1></h1>
 			<!-- Browsing feature goes here -->
 			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
-			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+			<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
 		</header>
 		
 		<!-- Banner goes here -->		
@@ -175,7 +226,7 @@
 		<div data-role = "content">
 		<!-- Content goes here -->
 		<ul data-role = "listview" data-inset = "true">
-			<li data-role = "devider" data-theme = "b"><h2>Name: Love is Perfect</h2></li>
+			<li data-role = "devider" data-theme = "a"><h2>Name: Love is Perfect</h2></li>
 			<li><img src = "images/AudioCd.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Audio Cd</span></p></li>
 			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">Disco</span></p></li>
 			<li><p><strong>Length:</strong><span class = "ui-li-aside">60 Minutes</span></p></li>		
@@ -191,8 +242,8 @@
 		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
 			<div data-role="navbar" id = "navbar">
       	<ul>
+				<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>         	
          	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
-            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
             <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
          </ul>
       </div>
@@ -208,7 +259,7 @@
 			<h1></h1>
 			<!-- Browsing feature goes here -->
 			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
-			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+			<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
 		</header>
 		
 		<!-- Banner goes here -->		
@@ -217,7 +268,7 @@
 		<div data-role = "content">
 		<!-- Content goes here -->
 		<ul data-role = "listview" data-inset = "true">
-			<li data-role = "devider" data-theme = "b"><h2>Name: La-la Di</h2></li>
+			<li data-role = "devider" data-theme = "a"><h2>Name: La-la Di</h2></li>
 			<li><img src = "images/AudioTape.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Audio Tape</span></p></li>
 			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">Disco</span></p></li>		
 			<li><p><strong>Length:</strong><span class = "ui-li-aside">60 Minutes</span></p></li>		
@@ -233,8 +284,8 @@
 		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
 			<div data-role="navbar" id = "navbar">
       	<ul>
+				<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>         	
          	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
-            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
             <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
          </ul>
       </div>
@@ -250,7 +301,7 @@
 			<h1></h1>
 			<!-- Browsing feature goes here -->
 			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
-			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+			<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
 		</header>
 		
 		<!-- Banner goes here -->		
@@ -259,7 +310,7 @@
 		<div data-role = "content">
 		<!-- Content goes here -->
 		<ul data-role = "listview" data-inset = "true">
-			<li data-role = "devider" data-theme = "b"><h2>Name: 'Lot to Say</h2></li>
+			<li data-role = "devider" data-theme = "a"><h2>Name: 'Lot to Say</h2></li>
 			<li><img src = "images/AudioCd.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Audio Cd</span></p></li>
 			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">Disco</span></p></li>		
 			<li><p><strong>Length:</strong><span class = "ui-li-aside">60 Minutes</span></p></li>		
@@ -275,8 +326,8 @@
 		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
 			<div data-role="navbar" id = "navbar">
       	<ul>
+				<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>         	
          	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
-            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
             <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
          </ul>
       </div>
@@ -292,7 +343,7 @@
 			<h1></h1>
 			<!-- Browsing feature goes here -->
 			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
-			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+			<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
 		</header>
 		
 		<!-- Banner goes here -->		
@@ -301,7 +352,7 @@
 		<div data-role = "content">
 		<!-- Content goes here -->
 		<ul data-role = "listview" data-inset = "true">
-			<li data-role = "devider" data-theme = "b"><h2>Name: From the Heart</h2></li>
+			<li data-role = "devider" data-theme = "a"><h2>Name: From the Heart</h2></li>
 			<li><img src = "images/AudioCd.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Audio Cd</span></p></li>
 			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">Disco</span></p></li>		
 			<li><p><strong>Length:</strong><span class = "ui-li-aside">60 Minutes</span></p></li>		
@@ -317,8 +368,8 @@
 		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
 			<div data-role="navbar" id = "navbar">
       	<ul>
+				<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>         	
          	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
-            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
             <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
          </ul>
       </div>
@@ -334,7 +385,7 @@
 			<h1></h1>
 			<!-- Browsing feature goes here -->
 			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
-			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+			<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
 		</header>
 		
 		<!-- Banner goes here -->		
@@ -343,7 +394,7 @@
 		<div data-role = "content">
 		<!-- Content goes here -->
 		<ul data-role = "listview" data-inset = "true">
-			<li data-role = "devider" data-theme = "b"><h2>Name: Shoot Me Now</h2></li>
+			<li data-role = "devider" data-theme = "a"><h2>Name: Shoot Me Now</h2></li>
 			<li><img src = "images/VideoDvd.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Video Dvd</span></p></li>
 			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">Action</span></p></li>		
 			<li><p><strong>Length:</strong><span class = "ui-li-aside">190 Minutes</span></p></li>		
@@ -359,8 +410,8 @@
 		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
 			<div data-role="navbar" id = "navbar">
       	<ul>
+				<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>         	
          	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
-            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
             <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
          </ul>
       </div>
@@ -376,7 +427,7 @@
 			<h1></h1>
 			<!-- Browsing feature goes here -->
 			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
-			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+			<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
 		</header>
 		
 		<!-- Banner goes here -->		
@@ -385,7 +436,7 @@
 		<div data-role = "content">
 		<!-- Content goes here -->
 		<ul data-role = "listview" data-inset = "true">
-			<li data-role = "devider" data-theme = "b"><h2>Name: Fire Test</h2></li>
+			<li data-role = "devider" data-theme = "a"><h2>Name: Fire Test</h2></li>
 			<li><img src = "images/VideoDvd.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Video Tape</span></p></li>
 			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">Adventure</span></p></li>		
 			<li><p><strong>Length:</strong><span class = "ui-li-aside">120 Minutes</span></p></li>		
@@ -401,8 +452,8 @@
 		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
 			<div data-role="navbar" id = "navbar">
       	<ul>
+				<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>         	
          	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
-            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
             <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
          </ul>
       </div>
@@ -418,7 +469,7 @@
 			<h1></h1>
 			<!-- Browsing feature goes here -->
 			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
-			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+			<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
 		</header>
 		
 		<!-- Banner goes here -->		
@@ -427,7 +478,7 @@
 		<div data-role = "content">
 		<!-- Content goes here -->
 		<ul data-role = "listview" data-inset = "true">
-			<li data-role = "devider" data-theme = "b"><h2>Name: Times of Glory</h2></li>
+			<li data-role = "devider" data-theme = "a"><h2>Name: Times of Glory</h2></li>
 			<li><img src = "images/VideoDvd.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Video Dvd</span></p></li>
 			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">Adventure</span></p></li>		
 			<li><p><strong>Length:</strong><span class = "ui-li-aside">190 Minutes</span></p></li>		
@@ -443,8 +494,8 @@
 		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
 			<div data-role="navbar" id = "navbar">
       	<ul>
+				<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>         	
          	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
-            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
             <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
          </ul>
       </div>
@@ -460,7 +511,7 @@
 			<h1></h1>
 			<!-- Browsing feature goes here -->
 			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
-			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+			<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
 		</header>
 		
 		<!-- Banner goes here -->		
@@ -469,7 +520,7 @@
 		<div data-role = "content">
 		<!-- Content goes here -->
 		<ul data-role = "listview" data-inset = "true">
-			<li data-role = "devider" data-theme = "b"><h2>Name: Designing Interfaces</h2></li>
+			<li data-role = "devider" data-theme = "a"><h2>Name: Designing Interfaces</h2></li>
 			<li><img src = "images/Book.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Reference</span></p></li>
 			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">PDF File</span></p></li>		
 			<li><p><strong>Length:</strong><span class = "ui-li-aside">550 Pages</span></p></li>		
@@ -485,8 +536,8 @@
 		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
 			<div data-role="navbar" id = "navbar">
       	<ul>
+				<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>         	
          	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
-            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
             <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
          </ul>
       </div>
@@ -502,7 +553,7 @@
 			<h1></h1>
 			<!-- Browsing feature goes here -->
 			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
-			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+			<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
 		</header>
 		
 		<!-- Banner goes here -->		
@@ -511,7 +562,7 @@
 		<div data-role = "content">
 		<!-- Content goes here -->
 		<ul data-role = "listview" data-inset = "true">
-			<li data-role = "devider" data-theme = "b"><h2>Name: Little House on The Prairie</h2></li>
+			<li data-role = "devider" data-theme = "a"><h2>Name: Little House on The Prairie</h2></li>
 			<li><img src = "images/Book.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Literature</span></p></li>
 			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">PDF File</span></p></li>		
 			<li><p><strong>Length:</strong><span class = "ui-li-aside">550 Pages</span></p></li>		
@@ -527,8 +578,8 @@
 		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
 			<div data-role="navbar" id = "navbar">
       	<ul>
+				<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>         	
          	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
-            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
             <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
          </ul>
       </div>
@@ -545,7 +596,7 @@
 			<h1></h1>
 			<!-- Browsing feature goes here -->
 			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
-			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+			<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
 		</header>
 		
 		<!-- Banner goes here -->		
@@ -554,7 +605,7 @@
 		<div data-role = "content">
 		<!-- Content goes here -->
 		<ul data-role = "listview" data-inset = "true">
-			<li data-role = "devider" data-theme = "b"><h2>Name: Car Documents</h2></li>
+			<li data-role = "devider" data-theme = "a"><h2>Name: Car Documents</h2></li>
 			<li><img src = "images/Other.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Other</span></p></li>
 			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">PDF File</span></p></li>		
 			<li><p><strong>Length:</strong><span class = "ui-li-aside">20 Pages</span></p></li>		
@@ -570,8 +621,8 @@
 		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
 			<div data-role="navbar" id = "navbar">
       	<ul>
+				 <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>         	
          	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
-            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
             <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
          </ul>
       </div>
@@ -581,13 +632,13 @@
 	<!-- This is the "Windows 98 Cd" ------------------------------------------------------------------------------------------------------------------>
 	<div data-role = "page" id = "w9cp">
 			
-			<!-- Header goes here-->
+		<!-- Header goes here-->
 		<header data-role = "header" data-position = "fixed">
 			 			
 			<h1></h1>
 			<!-- Browsing feature goes here -->
 			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
-			<a href = "additem.html" data-role = "button" data-icon = "plus" id = "feature" rel = "external" class = "ui-btn-right">New Entry</a>
+			<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
 		</header>
 		
 		<!-- Banner goes here -->		
@@ -596,7 +647,7 @@
 		<div data-role = "content">
 		<!-- Content goes here -->
 		<ul data-role = "listview" data-inset = "true">
-			<li data-role = "devider" data-theme = "b"><h2>Name: Windows 98 Cd</h2></li>
+			<li data-role = "devider" data-theme = "a"><h2>Name: Windows 98 Cd</h2></li>
 			<li><img src = "images/DataCd.png"></img><hr></hr><p><strong>Type:</strong><span class = "ui-li-aside">Other</span></p></li>
 			<li><p><strong>Genre/Type:</strong><span class = "ui-li-aside">Data Cd</span></p></li>		
 			<li><p><strong>Length:</strong><span class = "ui-li-aside"></span></p></li>		
@@ -612,14 +663,183 @@
 		<footer data-role = "footer" data-theme = "a" data-position = "fixed" data-id = "ftbottom">
 			<div data-role="navbar" id = "navbar">
       	<ul>
+				<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>         	
          	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
-            <li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>
             <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
          </ul>
       </div>
 		</footer>
 	</div>
 	
+	<!-- This is the "addItem page" ------------------------------------------------------------------------------------------------------------------>
+	<div data-role = "page" id = "addItem">		
+		
+		<!-- Header goes here-->
+		<header data-role = "header">
+			 			
+			<h1></h1>
+			<!-- Browsing feature goes here -->
+			<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left">Back</a>
+			<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
+		</header>
+		
+		<!-- Banner goes here -->		
+		<img src = "images/Untitled-2.png"/>
+		<div data-role="navbar" id = "navbar" >
+      	<ul>
+				<button id = "displayDataButton" value = "Display Stored Data" data-theme="a" data-icon="check"></button>        	
+         	
+         </ul>
+      </div>
+		<div data-role = "content">
+		
+		<!-- Content goes here -->
+			<form action = "" method = "post" id = "firstForm">
+				<div data-role = "fieldcontain">
+					<label for = "mediaChoice">Choose Media Class:</label>
+					<select name = "mediaChoice" id = "mediaChoice" data-native-menu = "true"/>
+						<optgroup label = "Audio">
+							<option value = "AudioCd" selected = "selected">AudioCd</option>				
+							<option value = "AudioTape">AudioTape</option>				
+							<option value = "AudioRecord">AudioRecord</option>		
+						</optgroup>		
+						<optgroup label = "Video">
+							<option value = "VideoDvd">VideoDvd</option>				
+							<option value = "VideoCd">VideoCd</option>				
+							<option value = "VideoTape">VideoTape</option>		
+						</optgroup>
+						<optgroup label = "Data">
+							<option value = "DataDvd">DataDvd</option>				
+							<option value = "DataCd">DataCd</option>				
+							<option value = "MemoryStick">MemoryStick</option>		
+						</optgroup>
+						<optgroup label = "Other">
+							<option value = "Book">eBook</option>				
+							<option value = "Document">eDocument</option>				
+						</optgroup>
+					</select>
+					<p class = "hintText">Select a category for your entry.</p>		
+				</div>
+				
+											
+				<!--Input Fields Start Here -->
+				<div data-role = "fieldcontain">					
+					<label for = "nameItem"><strong>*</strong>&nbsp;Name:</label>
+					<input type = "text" name = "nameItem" id = "nameItem" class = "required"/>
+					<p class = "hintText">Example: "Car"</p>
+				</div>
+				<div data-role = "fieldcontain">
+					<label for = "genreItem"><strong>*</strong>&nbsp;Genre/Type:</label>
+					<input type = "text" name = "genreItem" id = "genreItem" class = "required"/>
+					<p class = "hintText">Example: "Sedan"</p>
+				</div>	
+				<div data-role = "fieldcontain">
+					<label for = "lengthItem">Length:</label>
+					<input type = "text" name = "lengthItem" id = "lengthItem" class = "number"/>
+					<p class = "hintText">Example: "120". Use only if applicable.</p>
+				</div>	
+				<div data-role = "fieldcontain">
+					<label for = "pubDate">Release<small>&nbsp;-or-&nbsp;</small>Manufacture Date:</label>
+					<input type = "date" name = "pubDate" id = "pubDate" default = "01-01-2001"/>
+					<p class = "hintText">The date when the item was released or manufactured.</p>
+				</div>
+				<div data-role = "fieldcontain">
+					<label for = "datePurchase">Purchase Date:</label>
+					<input type = "date" name = "purchaseDate" id = "purchaseDate" />
+				</div>
+				<div data-role = "fieldcontain">
+					<label for = "favCheck" id = "favCheckLabel">Favorite Item:</label>	
+					<input type = "checkbox" id = "favCheck" value = "Yes">			
+				</div>
+				<div data-role = "fieldcontain">
+					<label>Does the item have a backup copy?</label>
+					<input type = "radio" name = "securityCopy" id = "radioYes" value = "Yes"/>
+					<label for = "radioYes">Yes</label>
+					<input type = "radio" name = "securityCopy" id = "radioNo" value = "No" checked = "checked"/>
+					<label for = "radioNo">No</label>
+				</div>			
+				<div data-role = "fieldcontain">		
+					<label for = "slider">Next Revision:</label>
+					<input type="range" name = "slider" id = "slider" value="0" min="0" max="10" class = "ignore"/>
+				</div>
+				<div data-role = "fieldcontain">
+					<label for = "notes" id = "notesLabel">Additional Notes:</label>
+					<textarea id = "notes" name = "notesLabel"></textarea>
+				</div>
+					
+				<div data-role = "fieldcontain">					
+					<fieldset class = "ui-block-a">
+						<div class="ui-block-b"><button type="submit" data-theme="a" id = "submitButton">Submit</button></div>	    				
+	    				<div class="ui-block-a"><button type="reset" data-theme="a">Cancel</button></div>
+					</fieldset>
+	    		</div>
+				
+			</form>
+		</div>
+		<!--Footer goes here-->	
+		<footer data-role = "footer" data-theme = "a" data-id = "ftbottom">
+			<div data-role="navbar" id = "navbar">
+      	<ul>
+				<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>         	
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
+         </ul>
+      </div>
+		</footer>	
+	</div>
+	
+	<!-- This is the "Display Info" page -------------------------------------------------------------------------------------------------------->
+	<div data-role = "page" id = "displayData">
+	
+		<div data-role = "header">
+	
+			<header data-role = "header">
+				 			
+				<h1></h1>
+				<!-- Browsing feature goes here -->
+				<a href = "#mainPage" data-role = "button" data-icon = "arrow-l" id = "backBtn" class = "ui-btn-left" id = "displayDataButton">Back</a>
+				<a href = "#addItem" data-role = "button" data-icon = "plus" id = "feature" class = "ui-btn-right">New Entry</a>
+			</header>
+			
+			<!-- Banner goes here -->		
+			<img src = "images/Untitled-2.png"/>	
+			
+		</div>
+		<div data-role="navbar" id = "navbar" >
+      	<ul>
+				<button id = "clearLocal" value = "Clear local-storage" data-theme="a" data-icon="gear"></button>        	
+         	
+         </ul>
+     		</div>
+		<div data-role = "content" id = "container">
+			
+		</div>
+	
+		<!--Footer goes here-->	
+		<footer data-role = "footer" data-theme = "a" data-id = "ftbottom" data-position = "fixed">
+			<div data-role="navbar" id = "navbar">
+      	<ul>
+				<li><a href="#mainPage" data-icon="home" data-theme = "a">Home</a></li>         	
+         	<li><a href="#moreInfo" data-icon="info" data-theme = "a">Info</a></li>
+            <li><a href="#newsStream" data-icon="gear" data-theme = "a">News Stream</a></li>
+         </ul>
+      </div>
+		</footer>
+		
+		<div data-role="popup" id="deleteObject" data-theme="a" data-overlay-theme="a" class="ui-content" style="max-width:200px; padding-bottom:2em;">
+    		<h3>Delete Entry?</h3>
+    		<p>The entry will be lost.</p>
+    		<a href="#" data-role="button" data-rel="back" data-theme="a" data-icon="check" data-inline="true" data-mini="true" id = "deleteButton">Delete</a>
+    		<a href="#" data-role="button" data-rel="back" data-inline="true" data-mini="true">Cancel</a>
+		</div>
+		
+		<div data-role="popup" id="saveConfirm" data-theme="a" data-overlay-theme="a" class="ui-content" style="max-width:200px; padding-bottom:2em;">
+    		<h3>Data Saved</h3>
+    		<p>Data saved into local-storage...</p>
+    		<a href="#displayData" data-role="button" data-rel="back" data-theme="a" data-icon="check" data-inline="true" data-mini="true" id = "deleteButton">Ok</a>
+		</div>
+	
+	</div>	
 	
 </body>
 

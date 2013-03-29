@@ -175,7 +175,7 @@ function getData() {
 	
 	if (localStorage.length === 0) {
 		alert("There is no data in the Local Storage. Default data was added.");
-		autoPopulate();
+		//autoPopulate();
 		//window.location = "additem.html";	
 		//window.location.reload();
 	}	
