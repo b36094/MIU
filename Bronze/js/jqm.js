@@ -1,17 +1,14 @@
-$(document).on('pageinit', '#mainPage', function(){
-	// Concept implemented by the JQuery Mobile Dev. Team <--> Experimental phase. 
-	// Refactoring for this project by: Andrei B.	
-	$(function(){
-		$('[data-role="list-divider"]').toggle(function(){
-			$('.'+$(this).attr('data-link')).addClass('show');
-			$(this).children().removeClass('ui-icon-plus').addClass('ui-icon-minus');
-		},
-	
-		function(){
-			$('.'+$(this).attr('data-link')).removeClass('show');
-			$(this).children().removeClass('ui-icon-minus').addClass('ui-icon-plus');
-	 	});	
-	});
+$(document).on('pageshow', '#mainPage', function(){
+		$(document).off('click').on('click', '[data-role="list-divider"]', function(){
+			if(!$('.'+$(this).attr('data-link')).hasClass('show')) {
+				$('.'+$(this).attr('data-link')).addClass('show');
+				$(this).children().removeClass('ui-icon-plus').addClass('ui-icon-minus');			
+			} else {
+				$('.'+$(this).attr('data-link')).removeClass('show');
+				$(this).children().removeClass('ui-icon-minus').addClass('ui-icon-plus');			
+			}
+		});
+
 }); //here ends $(document).ready();	
 	
 $(document).on('pageinit', '#addItem', function(){	
